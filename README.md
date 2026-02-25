@@ -177,7 +177,7 @@ The `scoring/` directory contains the inputs used for structured evaluation and 
 
 The repository root also contains human-rater summaries:
 - `summary_rater1.csv`
-- `summary_rater_2.csv`
+- `summary_rater2.csv`
 - `summary_rater3.csv`
 
 These support aggregation and comparison of operator-centered ratings (e.g., ODSC).
