@@ -86,7 +86,7 @@ Main artifacts:
 
 Main artifacts (examples from your current structure):
 - `summary_rater1.csv`
-- `summary_rater_2.csv`
+- `summary_rater2.csv`
 - `summary_rater3.csv`
 - `scenario_runs_compare/` (timestamped scenario run outputs)
 - `scoring/` (testcases, memory variants, scoring configs)
