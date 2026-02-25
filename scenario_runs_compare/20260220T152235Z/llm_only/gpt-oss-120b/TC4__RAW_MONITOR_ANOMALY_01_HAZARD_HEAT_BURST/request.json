@@ -1,0 +1,36 @@
+{
+  "question": "Hazard classification (Top-1). Use ONLY CONTEXT as evidence.\n\n    Output requirements:\n    - Direct Answer: ONE-LINE JSON as specified by the simple-rag prompt.\n    - After the JSON, write a detailed, operator-style report:\n      * Observed anomalies / signatures (bullet list)\n      * Why the chosen hazard matches (cite specific retrieved fields: sampleData, keywords/altLabel, triggers/causes, impacts)\n      * 1–3 close alternatives and why they were rejected (with citations)\n      * What would confirm/deny (additional measurements / logs).\n\n    No natural-language hints are provided. Treat the snippet as raw telemetry; infer the most plausible hazard label from the pattern.\n\n    SNIPPET:\n    temp_F,dewpoint_F,RH_pct,wind_sust_mph,wind_gust_mph,pressure_hPa,precip_in\n00:00,84.2,66.1,56,6,10,1009.9,0.00\n00:05,84.0,66.0,56,6,10,1010.0,0.00\n00:10,83.6,65.8,57,6,10,1010.0,0.00\n00:15,83.2,65.6,57,6,11,1010.1,0.00\n00:20,82.9,65.5,58,6,11,1010.1,0.00\n00:25,82.6,65.4,58,6,10,1010.2,0.00\n00:30,82.3,65.2,59,6,10,1010.2,0.00\n00:35,86.8,58.0,40,10,18,1010.6,0.00\n00:40,92.9,49.5,26,14,26,1011.0,0.00\n00:45,97.6,42.8,17,17,33,1011.5,0.00\n00:50,100.1,38.7,13,19,37,1011.8,0.00\n00:55,101.2,35.6,11,20,40,1012.0,0.00\n01:00,100.4,36.8,12,19,38,1011.9,0.00\n01:05,97.2,41.7,17,16,31,1011.6,0.00\n01:10,93.1,48.9,25,13,24,1011.2,0.00\n01:15,89.0,55.7,35,10,18,1010.9,0.00\n\nADDITIONAL REQUIREMENTS:\n- After the Direct Answer JSON, provide a Detailed Report with: hazard overview; why this match (with citations); operator recommendations; further information links (from cited hazard card sources).",
+  "llm": {
+    "base_url": "http://localhost:1234/v1",
+    "model": "gpt-oss-120b",
+    "api_key": "lm-studio",
+    "temperature": 0.2,
+    "max_tokens": 131072
+  },
+  "retrieval": {
+    "top_k": {
+      "Knowledge": 250,
+      "Memory": 250,
+      "Experiences": 250,
+      "Environment": 250,
+      "OpsState": 250
+    },
+    "recent_k": {
+      "Memory": 250,
+      "Environment": 250,
+      "OpsState": 250,
+      "Knowledge": 250,
+      "Experiences": 250
+    },
+    "per_doc_chars": 1200
+  },
+  "corpora": {
+    "Knowledge": "hazard_cards_v5.json",
+    "Experiences": "experiences.json",
+    "Environment": "environment.json",
+    "Memory": "scenario-01/memory-1769412000000.json"
+  },
+  "judge": {
+    "enabled": false
+  }
+}

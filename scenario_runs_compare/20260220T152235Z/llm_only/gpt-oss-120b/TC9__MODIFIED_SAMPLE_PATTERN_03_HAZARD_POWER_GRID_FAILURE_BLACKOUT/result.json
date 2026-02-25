@@ -1,0 +1,31 @@
+{
+  "final": "**Direct Answer**\n```json\n{\"hazard_classification\":\"not specified\"}\n```\n\n**Detailed Report**\n\n- **Observed anomalies / signatures**\n  - No hazard classification information is available in the provided context.\n  - The telemetry snippet shows a rapid increase from 62 to 400 units between 00:30 and 00:40, followed by a plateau around 410‑420 units for the next hour.  \n    *However, without reference hazard definitions (e.g., sampleData ranges, keywords, triggers, impacts), these patterns cannot be mapped to a specific hazard.*\n\n- **Why the chosen hazard matches**\n  - *Not specified*: The required fields such as `sampleData`, `keywords/altLabel`, `triggers/causes`, or `impacts` are absent from the context, so no evidence can support any particular hazard classification.\n\n- **Close alternatives and why they were rejected**\n  1. **Thermal runaway** – would require temperature‑related sample data and triggers; not present.\n  2. **Pressure surge** – would need pressure units or related keywords; absent.\n  3. **Electrical overload** – would need voltage/current descriptors; missing.\n\n- **What would confirm/deny**\n  - Access to the hazard knowledge base containing:\n    - Sample data ranges and typical trajectories for each hazard type.\n    - Keywords, alternative labels, triggers, causes, and impact descriptions.\n  - Correlation of the telemetry pattern (sharp rise → plateau) with those documented signatures.\n\n- **Operator Recommendations**\n  - Obtain the relevant hazard classification cards or database entries that define expected telemetry signatures.\n  - Provide unit labels for the telemetry values (e.g., °C, psi, A) to enable proper mapping.\n  - Supply any known system context (equipment type, operating limits) to narrow down possible hazards.\n\n- **Further Information Links**\n  - *Not specified* – no hazard card sources are available in the current context.",
+  "contexts": {
+    "pass1": {
+      "Memory": ""
+    },
+    "pass2": {}
+  },
+  "metrics": {
+    "llm_calls": 1,
+    "uses_retrieval": false,
+    "retrieval_corpora": [],
+    "memory_enabled": false,
+    "citation_count": 0,
+    "min_citations_threshold": 2,
+    "has_min_citations": false,
+    "top_k_memory": 0,
+    "recent_k_memory": 0,
+    "memory_items_total": 0,
+    "bm25_hits": 0,
+    "recent_added": 0,
+    "deduped_hits": 0
+  },
+  "meta": {
+    "mode": "llm_one_shot_no_memory",
+    "model": "gpt-oss-120b",
+    "base_url": "http://localhost:1234/v1",
+    "question": "Hazard classification (Top-1). Use ONLY CONTEXT as evidence.\n\n    Output requirements:\n    - Direct Answer: ONE-LINE JSON as specified by the simple-rag prompt.\n    - After the JSON, write a detailed, operator-style report:\n      * Observed anomalies / signatures (bullet list)\n      * Why the chosen hazard matches (cite specific retrieved fields: sampleData, keywords/altLabel, triggers/causes, impacts)\n      * 1–3 close alternatives and why they were rejected (with citations)\n      * What would confirm/deny (additional measurements / logs).\n\n    The snippet is a raw telemetry; Focus on anomalies onset/recovery trajectory and plateau behavior.\n\n    SNIPPET:\n    \n00:00,50\n00:10,55\n00:20,60\n00:30,62\n00:40,400\n00:50,420\n01:00,415\n01:10,410\n01:20,405\n\n\nADDITIONAL REQUIREMENTS:\n- After the Direct Answer JSON, provide a Detailed Report with: hazard overview; why this match (with citations); operator recommendations; further information links (from cited hazard card sources).",
+    "method": "llm_only"
+  }
+}

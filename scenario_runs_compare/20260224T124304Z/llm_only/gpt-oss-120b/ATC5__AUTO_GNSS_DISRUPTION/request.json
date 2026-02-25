@@ -1,0 +1,34 @@
+{
+  "question": "Hazard classification (Top-1). Use ONLY CONTEXT as evidence.\n\nOutput requirements:\n- Direct Answer: ONE-LINE JSON only, schema:\n  {\"hazard_id\":\"...\",\"label\":\"...\",\"confidence\":0.0,\"evidence\":[\"[Knowledge:.. ...]\"],\"notes\":\"short\"}\n- Do not add any additional text.\n\nSNIPPET:\nreport_id,ts_utc,lat,lon,platform,issue_type,impact,notes\nNAVCEN-1,2025-04-03T19:22:00Z,36.85,28.27,maritime,\"jamming suspected\",\"loss_of_fix\",\"Intermittent GPS signal; reverted to inertial nav\"\nNAVCEN-2,2025-04-04T5:10:00Z,26.571,55.27,aviation,\"spoofing suspected\",\"position_jump\",\"Reported sudden position offset; RAIM alert\"",
+  "llm": {
+    "base_url": "http://localhost:1234/v1",
+    "model": "gpt-oss-120b",
+    "api_key": "lm-studio",
+    "temperature": 0.2,
+    "max_tokens": 131072
+  },
+  "retrieval": {
+    "top_k": {
+      "Knowledge": 250,
+      "Memory": 250,
+      "Experiences": 0,
+      "Environment": 0,
+      "OpsState": 0
+    },
+    "recent_k": {
+      "Memory": 250
+    },
+    "per_doc_chars": 1200
+  },
+  "corpora": {
+    "Knowledge": "hazard_cards_v5.json",
+    "Experiences": "experiences.json",
+    "Environment": {
+      "items": []
+    },
+    "Memory": "scenario-01/no-memory.json"
+  },
+  "judge": {
+    "enabled": false
+  }
+}

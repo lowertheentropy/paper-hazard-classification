@@ -1,0 +1,22 @@
+# Report
+
+- Method: `llm_only`
+- Model: `gpt-oss-120b`
+
+## Question
+
+Hazard classification (Top-1). Use ONLY CONTEXT as evidence.
+
+Output requirements:
+- Direct Answer: ONE-LINE JSON only, schema:
+  {"hazard_id":"...","label":"...","confidence":0.0,"evidence":["[Knowledge:.. ...]"],"notes":"short"}
+- Do not add any additional text.
+
+SNIPPET:
+event_id,event_date,country_name,landslide_type,trigger,road_closure,fatality_count
+GLC534,2019-06-14,USA,Rock fall,Earthquake,Yes,0
+GLC000511,2022-7-2,Peru,Rock fall,Mining-related,No,2
+
+## Final Answer
+
+{"hazard_id":"rock_fall","label":"Rockfall","confidence":0.95,"evidence":[],"notes":"Observed rock fall events triggered by earthquake and mining."}

@@ -1,0 +1,34 @@
+{
+  "question": "Hazard classification (Top-1). Use ONLY CONTEXT as evidence.\n\nOutput requirements:\n- Direct Answer: ONE-LINE JSON only, schema:\n  {\"hazard_id\":\"...\",\"label\":\"...\",\"confidence\":0.0,\"evidence\":[\"[Knowledge:.. ...]\"],\"notes\":\"short\"}\n- Do not add any additional text.\n\nSNIPPET:\nevent_id,event_date,country_name,landslide_type,trigger,road_closure,fatality_count\nGLC534,2019-06-14,USA,Rock fall,Earthquake,Yes,0\nGLC000511,2022-7-2,Peru,Rock fall,Mining-related,No,2",
+  "llm": {
+    "base_url": "http://localhost:1234/v1",
+    "model": "gpt-oss-120b",
+    "api_key": "lm-studio",
+    "temperature": 0.2,
+    "max_tokens": 131072
+  },
+  "retrieval": {
+    "top_k": {
+      "Knowledge": 250,
+      "Memory": 250,
+      "Experiences": 0,
+      "Environment": 0,
+      "OpsState": 0
+    },
+    "recent_k": {
+      "Memory": 250
+    },
+    "per_doc_chars": 1200
+  },
+  "corpora": {
+    "Knowledge": "hazard_cards_v5.json",
+    "Experiences": "experiences.json",
+    "Environment": {
+      "items": []
+    },
+    "Memory": "scenario-01/no-memory.json"
+  },
+  "judge": {
+    "enabled": false
+  }
+}

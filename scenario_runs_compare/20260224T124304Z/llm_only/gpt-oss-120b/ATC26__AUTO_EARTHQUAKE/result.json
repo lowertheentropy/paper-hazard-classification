@@ -1,0 +1,28 @@
+{
+  "final": "{\"hazard_id\":\"earthquake\",\"label\":\"Earthquake\",\"confidence\":0.96,\"evidence\":[\"[Snippet: 2026-02-19T22:14:12.340Z,37.766,-122.534,8.7,2.6,ml,\\\"10 km WSW of San Francisco, CA\\\",nc74910871]\"],\"notes\":\"Detected seismic event\"}",
+  "contexts": {
+    "pass1": {
+      "Memory": ""
+    },
+    "pass2": {}
+  },
+  "metrics": {
+    "llm_calls": 1,
+    "uses_retrieval": false,
+    "retrieval_corpora": [],
+    "citation_count": 1,
+    "min_citations_threshold": 2,
+    "has_min_citations": false,
+    "top_k_memory": 250,
+    "recent_k_memory": 250,
+    "memory_items_loaded": 0,
+    "output_mode": "keywords_only"
+  },
+  "meta": {
+    "mode": "llm_keywords_one_shot",
+    "model": "gpt-oss-120b",
+    "base_url": "http://localhost:1234/v1",
+    "question": "Hazard classification (Top-1). Use ONLY CONTEXT as evidence.\n\nOutput requirements:\n- Direct Answer: ONE-LINE JSON only, schema:\n  {\"hazard_id\":\"...\",\"label\":\"...\",\"confidence\":0.0,\"evidence\":[\"[Knowledge:.. ...]\"],\"notes\":\"short\"}\n- Do not add any additional text.\n\nSNIPPET:\ntime,latitude,longitude,depth_km,mag,magType,place,event_id\n2026-02-19T22:14:12.340Z,37.766,-122.534,8.7,2.6,ml,\"10 km WSW of San Francisco, CA\",nc74910871\n2026-02-18T24:01:44.120Z,35.126,-118.243,11.492,3.119,ml,\"Los Angeles region, CA\",ci40672007",
+    "method": "llm_only"
+  }
+}

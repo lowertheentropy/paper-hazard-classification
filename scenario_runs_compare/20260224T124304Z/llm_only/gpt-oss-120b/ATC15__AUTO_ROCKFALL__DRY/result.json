@@ -1,0 +1,28 @@
+{
+  "final": "{\"hazard_id\":\"rock_fall\",\"label\":\"Rockfall\",\"confidence\":0.95,\"evidence\":[],\"notes\":\"Observed rock fall events triggered by earthquake and mining.\"}",
+  "contexts": {
+    "pass1": {
+      "Memory": ""
+    },
+    "pass2": {}
+  },
+  "metrics": {
+    "llm_calls": 1,
+    "uses_retrieval": false,
+    "retrieval_corpora": [],
+    "citation_count": 0,
+    "min_citations_threshold": 2,
+    "has_min_citations": false,
+    "top_k_memory": 250,
+    "recent_k_memory": 250,
+    "memory_items_loaded": 0,
+    "output_mode": "keywords_only"
+  },
+  "meta": {
+    "mode": "llm_keywords_one_shot",
+    "model": "gpt-oss-120b",
+    "base_url": "http://localhost:1234/v1",
+    "question": "Hazard classification (Top-1). Use ONLY CONTEXT as evidence.\n\nOutput requirements:\n- Direct Answer: ONE-LINE JSON only, schema:\n  {\"hazard_id\":\"...\",\"label\":\"...\",\"confidence\":0.0,\"evidence\":[\"[Knowledge:.. ...]\"],\"notes\":\"short\"}\n- Do not add any additional text.\n\nSNIPPET:\nevent_id,event_date,country_name,landslide_type,trigger,road_closure,fatality_count\nGLC534,2019-06-14,USA,Rock fall,Earthquake,Yes,0\nGLC000511,2022-7-2,Peru,Rock fall,Mining-related,No,2",
+    "method": "llm_only"
+  }
+}

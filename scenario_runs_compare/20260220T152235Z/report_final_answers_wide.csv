@@ -1,0 +1,608 @@
+"testcase_id","testcase_name","model","simple_rag__ok","simple_rag__folder","simple_rag__final","llm_only__ok","llm_only__folder","llm_only__final"
+"TC1","HAZARD_HEAT_BURST_DETAILED","gpt-oss-120b","True","scenario_runs_compare/20260220T152235Z/simple_rag/gpt-oss-120b/TC1__HAZARD_HEAT_BURST_DETAILED","**Direct Answer**  
+```json
+{""hazard_id"":""hazards:Hazard_Heat_Burst"",""label"":""Heat Burst"",""confidence"":0.95,""evidence"":[""[Knowledge:82 hazards:Hazard_Heat_Burst Heat Burst] Keywords: Satans Storm; Heat burst. Subtype: Extreme Temperature."",""Snippet describes a sudden “hot blast” with rapid temperature rise, humidity drop and gusty winds at night – classic characteristics of a heat‑burst event.""],""notes"":""Matches the observed rapid nocturnal temperature spike and downslope wind without wildfire.""}
+```
+
+**Justification**
+- The snippet reports an abrupt nighttime temperature jump into the mid‑80s °F with a simultaneous drop in humidity and strong gusty winds, which aligns with the definition of a **Heat Burst** (extreme temperature event)【Knowledge:82】.  
+- Heat bursts are described as “hot blast” phenomena caused by downdrafts that bring hot, dry air to the surface, exactly matching witness descriptions in the snippet.  
+- No wildfire is mentioned, consistent with heat‑burst events that are atmospheric rather than fire‑related.  
+
+---  
+
+### Detailed Report
+
+#### Hazard Overview
+**Heat Burst** (also known as “Satans Storm”) is a rare meteorological phenomenon characterized by a sudden, localized surge of hot, dry air descending from collapsing thunderstorms or storm downdrafts. It typically occurs at night and can cause rapid temperature spikes of 20 °F or more within minutes, accompanied by sharp humidity drops and strong gusty winds. The event is short‑lived (minutes) and does not involve precipitation or fire activity.
+
+#### Why This Match
+- **Rapid Temperature Rise:** The report notes a jump to the mid‑80s °F at night—exactly the abrupt heating described for heat bursts.  
+- **Humidity Drop & Gusty Winds:** Both are hallmark signatures of descending hot air in a heat burst.  
+- **Downslope Wind (“hot blast”):** The term “hot blast” is commonly used in heat‑burst literature to describe the strong, warm downdraft.  
+- **No Wildfire Reported:** Heat bursts are atmospheric; they do not require fire, matching the absence of wildfire in the snippet.
+
+#### Operator Recommendations
+1. **Immediate Safety Checks:** Advise residents and personnel to stay indoors during the event due to rapid temperature changes and potential wind‑related hazards (e.g., falling debris).  
+2. **Monitor Weather Radar:** Heat bursts are often preceded by weakening storm cells; continuous radar monitoring can provide early warning of collapsing storms.  
+3. **Public Communication:** Issue brief alerts explaining the phenomenon, emphasizing its short duration and that it poses limited but real risks (heat stress, wind damage).  
+4. **Post‑Event Assessment:** After the event, inspect infrastructure for wind‑related damage and verify that no secondary hazards (e.g., power line failures) have occurred.
+
+#### Further Information Links
+- Wikipedia entry on Heat Burst: https://en.wikipedia.org/wiki/Heat_burst  
+- NOAA Storm Events Database (for related extreme temperature events): https://www.ncei.noaa.gov/stormevents/  
+
+These sources provide additional technical details and historical case studies useful for preparedness and response planning.","True","scenario_runs_compare/20260220T152235Z/llm_only/gpt-oss-120b/TC1__HAZARD_HEAT_BURST_DETAILED","**Direct Answer**  
+```json
+{""hazard"":""Heat Burst""}
+```
+
+**Detailed Operator‑Style Report**
+
+- **Observed anomalies / signatures**
+  - Multiple nighttime calls reporting a sudden, brief surge of extremely warm air (mid‑80s °F) followed by rapid cooling.【Memory:1】
+  - Accompanying dry conditions and gusty, strong downslope winds described as a “hot blast.”【Memory:1】
+  - Humidity drops sharply during the temperature spike; wind gusts are brief (minutes).【Memory:1】
+
+- **Why “Heat Burst” matches**
+  - A heat burst is defined by an abrupt rise in temperature, rapid humidity decrease, and strong, dry downdrafts occurring typically at night—exactly the pattern reported.【Memory:1】
+  - The observed “hot blast” with downslope wind aligns with the classic katabatic‑type outflow of a heat burst.【Memory:1】
+
+- **Close alternatives & why rejected**
+  1. **Microburst/Dry Microburst** – also produces strong gusts, but usually associated with thunderstorms and precipitation; no storm activity or rainfall was reported.【Memory:1】
+  2. **Downsloping Windstorm (e.g., Chinook)** – can cause warm, dry winds, yet those events are sustained over longer periods rather than the brief minutes‑long spike described.【Memory:1】
+  3. **Wildfire‑induced fire wind** – generates hot gusts but would be accompanied by visible fire or smoke; witnesses reported no wildfire.【Memory:1】
+
+- **What would confirm/deny**
+  - **Confirm:** High‑resolution temperature and humidity logs showing a rapid ≥30 °F rise within minutes, followed by an equally swift drop; wind profilers indicating strong downdraft velocities without preceding convection.
+  - **Deny:** Radar or satellite detection of convective storms at the time (suggesting a microburst) or evidence of ongoing fire activity.
+
+- **Operator Recommendations**
+  - Log the event as a confirmed heat burst in the hazard database.
+  - Notify aviation and surface‑transport agencies of potential brief turbulence/visibility impacts during night hours.
+  - Deploy portable weather stations to capture future high‑frequency thermodynamic data for verification.
+
+- **Further Information Links**  
+  (References from the hazard card sources used for classification – not provided in current context; consult standard meteorological hazard catalogs for “Heat Burst.”)"
+"TC2","HAZARD_SEISMIC_SEICHE_DETAILED","gpt-oss-120b","True","scenario_runs_compare/20260220T152235Z/simple_rag/gpt-oss-120b/TC2__HAZARD_SEISMIC_SEICHE_DETAILED","**Direct Answer**  
+```json
+{""hazard_id"":""hazards:Hazard_Seismic_Seiche"",""label"":""Seismic Seiche"",""confidence"":0.99,""evidence"":[""[Knowledge:163 hazards:Hazard_Seismic_Seiche]"",""[Memory:1 #000092 Situation note]""],""notes"":""Oscillating lake water after earthquake, no tsunami.""}
+```
+
+**Justification**
+- The snippet describes rhythmic water‑level oscillations in an enclosed water body following a nearby earthquake, with damage to docks and snapping lines – exactly the definition of a **Seismic Seiche**【Knowledge:163 hazards:Hazard_Seismic_Seiche】.  
+- It explicitly states there is *no tsunami* and the setting is an inland lake/harbor basin, matching the “standing wave; enclosed waterbody; triggered by seismic waves” description.  
+- The memory note #000092 records a real‑world observation of this phenomenon (earthquake‑induced lake oscillations causing dock damage).  
+
+---  
+
+### Detailed Report  
+
+#### Hazard Overview  
+**Seismic Seiche** (also called “standing wave”) is a water‑level oscillation in lakes, reservoirs, or other enclosed water bodies caused by seismic shaking. The energy from an earthquake can set the water into resonant motion, producing rhythmic rise and fall of the surface that may last minutes to hours. Impacts include shoreline flooding, damage to docks, boats, mooring lines, and possible far‑field effects. It is distinct from a tsunami because it occurs in confined basins without oceanic wave propagation【Knowledge:163 hazards:Hazard_Seismic_Seiche】.
+
+#### Why This Match  
+- **Trigger:** The event follows a *nearby earthquake* – the primary cause of seismic seiches.  
+- **Location:** Occurs in a *lake/harbor basin*, an “enclosed waterbody” as defined for this hazard.  
+- **Symptoms:** *Rhythmic water level oscillations* and *boats striking piers, lines snapping* are classic impacts listed for seiche events.  
+- **Exclusion of Tsunami:** The description explicitly notes the absence of a tsunami warning, aligning with the distinction made in the hazard definition.  
+
+#### Operator Recommendations  
+1. **Immediate Safety Measures**  
+   - Suspend all vessel movements until water motion subsides.  
+   - Secure mooring lines and inspect dock structures for damage.  
+2. **Monitoring & Early Warning**  
+   - Deploy short‑term water‑level sensors (e.g., pressure transducers) to track oscillation amplitude and period.  
+   - Use seismometer data to anticipate possible seiche generation after future quakes.  
+3. **Structural Mitigation**  
+   - Reinforce dock pilings and install flexible mooring systems designed for dynamic loads.  
+   - Consider installing wave‑absorbing barriers or breakwaters in high‑risk basins.  
+4. **Emergency Planning**  
+   - Include seiche scenarios in harbor emergency response plans, with clear communication protocols to alert crews and the public.  
+
+#### Further Information Links (from cited sources)  
+- USGS Seismic Seiche overview: https://www.usgs.gov/programs/earthquake-hazards/seismic-seiches  
+- NOAA CO‑OPS Water Level API for real‑time lake level monitoring: https://tidesandcurrents.noaa.gov/api/  
+
+These resources provide technical details on seiche dynamics, detection methods, and mitigation strategies.","True","scenario_runs_compare/20260220T152235Z/llm_only/gpt-oss-120b/TC2__HAZARD_SEISMIC_SEICHE_DETAILED","**Direct Answer**  
+```json
+{""hazard"":""Seiche""}
+```
+
+---
+
+## Detailed Operator‑Style Report  
+
+### Observed anomalies / signatures  
+- Rhythmic oscillation of lake water level after a noticeable earthquake.  
+- Repeated striking of boats against the pier/dock and snapping of mooring lines.  
+- No tsunami warning; the body of water is inland with no ocean exposure.  \[Memory:1\]
+
+### Why “Seiche” matches the hazard (citations)  
+| Evidence | How it supports Seiche classification |
+|----------|----------------------------------------|
+| **Sample data / description** – rhythmic lake‑level oscillations following seismic shaking. | A classic trigger for a seiche is an earthquake that induces standing waves in enclosed water bodies. \[Memory:1\] |
+| **Keywords/altLabel** – not specified in the provided context, but “oscillating water level” and “resonance‑like waves” are typical descriptors of seiches. | (implicit) |
+| **Triggers / causes** – earthquake as the initiating event; no tsunami or oceanic source. | Seiches are commonly generated by seismic activity in lakes and harbors. \[Memory:1\] |
+| **Impacts** – vessels striking structures, lines snapping due to repeated sloshing. | These impacts align with documented seiche effects on shoreline infrastructure. \[Memory:1\] |
+
+### Close alternatives considered (and why rejected)  
+
+| Alternative | Reason for rejection (citation) |
+|-------------|---------------------------------|
+| **Tsunami** | No tsunami warning; the water body is inland and not ocean‑connected. \[Memory:1\] |
+| **Storm surge / wind‑driven wave set‑up** | No mention of severe weather or sustained winds; the trigger was an earthquake, not atmospheric forcing. \[not specified\] |
+| **Landslide‑generated impulse wave** | No evidence of a landslide into the lake; only seismic shaking is reported. \[not specified\] |
+
+### What would confirm or deny the classification  
+- **High‑frequency water‑level loggers** showing standing‑wave periods consistent with basin resonance.  \[not specified\]  
+- **Seismometer data** correlating ground motion timing with onset of oscillations.  \[not specified\]  
+- **Bathymetric and shoreline geometry analysis** confirming natural resonant modes matching observed period.  \[not specified\]  
+- Absence of these signatures, or detection of a wave front propagating from an external source, would argue against a seiche.
+
+### Operator Recommendations (hazard overview)  
+- Treat the event as a **seismic‑induced seiche** and issue alerts to vessels and dock personnel about potential rapid water‑level swings.  \[Memory:1\]  
+- Deploy temporary mooring reinforcement and restrict docking until oscillations subside.  \[not specified\]  
+
+### Further Information Links (from cited hazard card sources)  
+- Not specified."
+"TC3","HAZARD_POWER_GRID_FAILURE_BLACKOUT_DETAILED","gpt-oss-120b","True","scenario_runs_compare/20260220T152235Z/simple_rag/gpt-oss-120b/TC3__HAZARD_POWER_GRID_FAILURE_BLACKOUT_DETAILED","**Direct Answer**
+```json
+{""hazard_id"":""hazards:Hazard_Power_Grid_Failure_Blackout"",""label"":""Power Grid Failure / Blackout"",""confidence"":0.92,""evidence"":[""[Knowledge:145 hazards:Hazard_Power_Grid_Failure_Blackout]"",""[Memory:2 #000086 Dispatch center/situation]""],""notes"":""Citywide loss of electricity causing traffic‑light, mobile‑network and other infrastructure failures.""}
+```
+
+**Justification**
+- The snippet describes a **citywide outage** affecting power‑dependent services (mobile networks, traffic lights) – exactly the domain of *Power Grid Failure / Blackout*【Knowledge:145 hazards:Hazard_Power_Grid_Failure_Blackout】.  
+- Keywords such as “power outage”, “blackout”, and “grid failure” appear in the hazard’s BM25 text, matching the narrative.  
+- The observed pattern of **rising outage counts followed by partial restoration** aligns with typical blackout dynamics (cascading failure → recovery).  
+- Backup power activation is a common response to blackouts, reinforcing the match.  
+- No other hazard cards (e.g., GNSS disruption, ICT outage) mention simultaneous loss of electricity and traffic‑light failure.  
+
+---  
+
+### Detailed Report
+
+#### Hazard Overview
+**Power Grid Failure / Blackout**  
+- **Group:** Technological  
+- **Subtype:** Infrastructure Failure / Disruption  
+- **Aliases:** power outage; blackout; grid failure; cascading failure; Stromausfall; Blackout; Kaskadenausfall.  
+- **Typical Impacts:** Loss of electricity to residential, commercial, and critical infrastructure; disruption of communications, transportation signaling (traffic lights), water supply pumps, and emergency services; potential cascading effects on other utility networks.
+
+#### Why This Hazard Matches the Snippet
+1. **Scope of Impact** – The snippet reports a *citywide* loss affecting mobile networks and traffic control systems, which are directly dependent on electric power.  
+2. **Symptoms Listed** – “Mobile networks degrade, traffic lights fail” are classic blackout symptoms noted in the hazard description.  
+3. **Temporal Pattern** – “Rapidly rising outage counts followed by partial recovery” mirrors the *cascading failure* and subsequent restoration phases described for blackouts.  
+4. **Backup Power Mention** – The shift to backup generators is a standard mitigation response for grid failures, reinforcing the relevance of this hazard card.  
+
+#### Operator Recommendations
+| Action | Rationale |
+|--------|-----------|
+| **Activate and verify backup power systems** (generators, UPS) for critical infrastructure (traffic control centers, dispatch hubs, hospitals). | Ensures continuity of essential services during outage. |
+| **Prioritize restoration of the electrical distribution network** in zones with highest public‑safety impact (e.g., traffic corridors, emergency communication nodes). | Reduces secondary incidents caused by loss of signaling and communications. |
+| **Implement staged load shedding** to prevent further grid instability while crews repair faults. | Helps avoid cascading failures and protects remaining healthy sections of the grid. |
+| **Deploy mobile communication assets** (cell on wheels, satellite phones) to maintain command‑and‑control capability. | Mitigates loss of mobile network coverage for first responders. |
+| **Conduct post‑event analysis** using outage count logs to identify weak points in the distribution network and improve redundancy. | Improves resilience against future blackouts. |
+
+#### Further Information Links (from hazard card sources)
+- Wikipedia article on Power Outage: https://en.wikipedia.org/wiki/Power_outage  
+- USGS/EPA “Eagle‑I Power Outage Data” dataset (sample outage statistics) – useful for benchmarking outage duration and customer impact patterns.  
+
+*All information derived exclusively from the provided context.*","True","scenario_runs_compare/20260220T152235Z/llm_only/gpt-oss-120b/TC3__HAZARD_POWER_GRID_FAILURE_BLACKOUT_DETAILED","**Direct Answer:**  
+```json
+{""hazard"":""Power Outage""}
+```
+
+**Detailed Report**
+
+**Observed anomalies / signatures**
+- Heavy smoke from a cable duct/cable route with ongoing firefighting and hazardous gases present【Memory:1】.  
+- Citywide power outage reported by the dispatch center【Memory:2】.  
+- Mobile network instability, traffic lights out of service, multiple elevator emergencies【Memory:2】.  
+- Grid operator notes rising outage numbers with partial restoration in some streets/blocks【Memory:2】.  
+- Snippet describes “Citywide outage: mobile networks degrade, traffic lights fail… loss of electricity across districts”【Snippet】.
+
+**Why the chosen hazard matches**
+The dominant and system‑wide disturbance described is a **power outage**, which is explicitly mentioned in both the dispatch center log (“Citywide power outage”) and the supporting snippet that details infrastructure failures (mobile network, traffic signals, elevators) caused by loss of electricity. These elements collectively define the primary hazard affecting the city’s operations.
+
+**Close alternatives and why they were rejected**
+| Alternative | Reason for rejection |
+|-------------|----------------------|
+| **Fire** – heavy smoke and firefighting in a cable duct【Memory:1】 | While fire is present locally, the broader impact described (citywide infrastructure failure) points to power loss as the overarching hazard. |
+| **Hazardous Gas Leak** – dangerous gases persisting at the fire site【Memory:1】 | The gas threat is confined to the fire location; it does not explain the citywide outages and network failures. |
+| **Elevator Emergency** – multiple elevator incidents reported【Memory:2】 | These are secondary effects caused by loss of power rather than a primary hazard themselves. |
+
+**What would confirm or deny this classification**
+- **Confirming measurements:** Real‑time grid status logs showing voltage drops/outages; SCADA reports from the utility confirming loss of supply; backup generator activation records across critical facilities.  
+- **Denying measurements:** Absence of grid outage data combined with confirmed fire containment and no power interruption in substations would shift classification toward a localized fire or gas incident.
+
+**Operator‑style recommendations**
+1. Prioritize restoration of primary power feeds to critical infrastructure (hospitals, emergency services).  
+2. Deploy mobile generators to support traffic control systems and communication hubs.  
+3. Continue monitoring the fire site for hazardous gas concentrations; keep evacuation zones in place until gases are cleared.  
+4. Coordinate with utility crews to verify which districts have achieved partial restoration and where additional resources are needed.
+
+**Further information links**
+- Not specified."
+"TC4","RAW_MONITOR_ANOMALY_01_HAZARD_HEAT_BURST","gpt-oss-120b","True","scenario_runs_compare/20260220T152235Z/simple_rag/gpt-oss-120b/TC4__RAW_MONITOR_ANOMALY_01_HAZARD_HEAT_BURST","**Direct Answer**
+```json
+{""hazard_id"":""hazards:Hazard_Heat_Burst"",""label"":""Heat Burst"",""confidence"":0.95,""evidence"":[""[Memory:1 #000091 Dispatch center/call] Multiple calls reporting sudden heat/wind gusts during the night. Reports of briefly extremely warm air, dry, gusty wind; after a few minutes, cooling."",""[Knowledge:82 hazards:Hazard_Heat_Burst Heat Burst] HAZARD_ID: hazards:Hazard_Heat_Burst LABEL: Heat Burst ... Keywords: Satans Storm.""] ,""notes"":""Rapid temperature rise with concurrent wind gusts and humidity drop matches classic heat‑burst signatures.""}
+```
+
+**Detailed Report**
+
+**1. Hazard Overview**  
+- **Name / Label:** Heat Burst (also known as “Satans Storm”).  
+- **Group / Subtype:** Meteorological – Extreme Temperature.  
+- **Typical Characteristics:** Sudden, short‑duration spikes in temperature (often >30 °C increase) accompanied by strong wind gusts and a rapid drop in relative humidity and dew point. Occurs usually at night after rain‑related downdrafts dissipate.  
+
+**2. Why this snippet matches the Heat Burst hazard**  
+- **Rapid Temperature Increase:** The observations show temperature climbing from ~82 °F (27.8 °C) at 00:30 to a peak of 101 °F (38.3 °C) by 00:55 – an increase of ≈19 °F (≈10 °C) within 25 minutes, exactly the abrupt heating described for heat bursts.  
+- **Wind Gust Spike:** Wind gusts rise from a steady ~6 mph to 20 mph at the temperature peak, matching the “gusty wind” component of heat bursts.  
+- **Humidity & Dew‑point Drop:** Relative humidity falls from ~59 % to 11 % and dew point drops from 65 °F to 35 °F, indicating rapid drying of the air column – a hallmark of descending, evaporatively cooled air that then compresses and heats.  
+- **Temporal Pattern:** The event occurs during nighttime hours (00:00‑01:15), consistent with heat bursts which are most common after nocturnal rain showers.  
+
+These observations align directly with the definition and keywords in the Heat Burst hazard card ([Knowledge:82]).
+
+**3. Operator Recommendations**  
+| Action | Rationale |
+|--------|-----------|
+| **Issue Immediate Public Advisory** warning of sudden temperature spikes and strong gusts, especially for outdoor workers and vulnerable populations. | Rapid heating can cause heat‑related stress or equipment failure. |
+| **Monitor Nearby Radar/Weather Sensors** for residual precipitation that may have triggered the downdraft. | Heat bursts are often linked to dissipating rain showers; confirming this helps forecast recurrence. |
+| **Activate Wind‑Related Safety Protocols** (e.g., secure loose objects, advise pilots of sudden gusts). | Gusts up to 20 mph can affect low‑flying aircraft and unsecured structures. |
+| **Log the Event in Hazard Database** with precise timestamps for future climatological analysis. | Heat bursts are rare; detailed records improve statistical understanding. |
+| **Prepare Cooling Measures** (e.g., hydration stations) if the event persists or repeats. | Even short‑duration extreme heat can pose health risks. |
+
+**4. Further Information Links**  
+- Wikipedia entry on Heat Burst: https://en.wikipedia.org/wiki/Heat_burst  
+- Eric’s Weather Library overview of Heat Bursts (sample data): https://www.ericsweatherlibrary.com  
+- NOAA Storm Events Database for related nocturnal downdraft events.  
+
+These resources provide deeper scientific background and historical case studies useful for training, risk assessment, and public communication.","True","scenario_runs_compare/20260220T152235Z/llm_only/gpt-oss-120b/TC4__RAW_MONITOR_ANOMALY_01_HAZARD_HEAT_BURST","**Direct Answer**
+
+```json
+{""hazard"":""Dry Microburst""}
+```
+
+---
+
+## Detailed Operator‑Style Report  
+
+### Observed anomalies / signatures  
+- **Rapid temperature rise:** 82 °F → 101 °F in ~20 min (00:35–00:55)【Snippet】  
+- **Sharp dewpoint drop:** 65 °F → 35 °F over same interval, indicating very dry air【Snippet】  
+- **Relative humidity collapse:** 59 % → 11 % (dry, gusty conditions)【Snippet】  
+- **Sudden wind increase:** Sustained wind from ~6 mph to >30 mph; gusts up to 40 mph【Snippet】  
+- **Brief duration:** Anomalies last ≈15‑20 min before temperatures and humidity revert toward pre‑event values【Snippet】  
+- **Nighttime timing & reports of “briefly extremely warm air, dry, gusty wind” from multiple callers【Memory:1】  
+
+### Why the chosen hazard matches (Dry Microburst)  
+- **Signature match:** Dry microbursts are characterized by *short‑lived bursts of hot, very dry, strong winds* caused by descending air that warms adiabatically. The observed temperature spike, dewpoint plunge, RH collapse, and wind gusts fit this definition【Memory:1】【Snippet】.  
+- **Temporal pattern:** The event occurs at night, lasts only a few minutes, then cooling resumes—exactly the reported “brief” nature of dry microburst outflows【Memory:1】.  
+
+### Close alternatives & why they were rejected  
+
+| Alternative | Reason for rejection |
+|-------------|----------------------|
+| **Wet Microburst / Downburst** | Would show *cooling* and higher moisture (dewpoint ≈ ambient) as rain‑cooled air descends; the data show strong warming and drying【Snippet】. |
+| **Thunderstorm Outflow (Gust Front)** | Typically accompanied by a temperature *drop* and possible precipitation; no precip recorded (precip_in = 0.00) and temperatures rise sharply【Snippet】. |
+| **Heat Wave** | Occurs over hours to days, not a 15‑minute burst; also lacks the abrupt wind gusts observed【Snippet】. |
+
+### What would confirm or deny the classification  
+- **Vertical wind profile (radar/lidar):** Detection of a descending high‑density air column at the time of the event would confirm a microburst.  
+- **Surface pressure spikes:** Microbursts often produce a brief pressure rise; high‑resolution barometer data could verify this.  
+- **Infrared satellite imagery:** A “heat burst” signature (hot spot) coincident with the timing would support the dry microburst hypothesis.  
+- **Absence of precipitation radar returns** during the event would further rule out wet downbursts or gust fronts.
+
+### Operator Recommendations  
+1. **Log the event as a Dry Microburst** in incident tracking systems.  
+2. **Alert nearby aviation and fire‑control units** about potential sudden wind shear and rapid temperature changes.  
+3. **Collect additional sensor data** (high‑frequency pressure, vertical wind) for post‑event analysis to refine detection algorithms.  
+
+### Further Information Links (from hazard reference cards)  
+- *Dry Microburst* – NOAA Storm Prediction Center (SPC) microburst guidance.  
+- *Heat Burst Phenomenon* – National Weather Service glossary.  
+
+*(All citations refer to the provided context: dispatch call summary【Memory:1】 and the telemetry snippet【Snippet】.)*"
+"TC5","RAW_MONITOR_ANOMALY_02_HAZARD_SEISMIC_SEICHE","gpt-oss-120b","True","scenario_runs_compare/20260220T152235Z/simple_rag/gpt-oss-120b/TC5__RAW_MONITOR_ANOMALY_02_HAZARD_SEISMIC_SEICHE","**Direct Answer**
+```json
+{""hazard_id"":""hazards:Hazard_Seismic_Seiche"",""label"":""Seismic Seiche"",""confidence"":0.99,""evidence"":[""[Knowledge:163 hazards:Hazard_Seismic_Seiche] Caused by hazard(s): Earthquake. Keywords: standing wave; enclosed waterbody; triggered by seismic waves; lake/reservoir sloshing; oscillating water levels; shoreline flooding; damage to docks/boats; ... distinct from tsunami."",""[Memory:1 #000092 Situation note] Harbor master: After a noticeable earthquake, the lake’s water level is oscillating rhythmically. Boats are repeatedly striking the pier/dock, lines are snapping. No tsunami—this is an inland body of water.""],""notes"":""Inland seismic‑induced standing wave (seiche) affecting docked vessels.""}
+```
+
+**Justification**
+- The incident describes rhythmic lake‑level oscillations after an earthquake, causing boats to hit the pier – exactly the phenomenon defined for **Seismic Seiche**.【Knowledge:163 hazards:Hazard_Seismic_Seiche】  
+- The memory note confirms no tsunami and that the water body is inland, matching the “distinct from tsunami” clause of the seiche description.【Memory:1 #000092 Situation note】  
+- No other hazard cards (e.g., Tsunami, Lake Nyos Disaster) fit both the trigger (earthquake) and the setting (enclosed lake).  
+
+**Detailed Report**
+
+*Hazard Overview*  
+Seismic seiches are standing waves generated in enclosed or semi‑enclosed water bodies when seismic energy from an earthquake induces oscillations. They can cause rapid water level changes, shoreline flooding, damage to docks, boats, and other waterfront infrastructure. Unlike tsunamis, they occur in lakes, reservoirs, bays, or harbors and are confined to the local basin.
+
+*Why This Match*  
+- **Trigger:** Earthquake – explicitly listed as a cause for seismic seiche.  
+- **Environment:** Inland lake/reservoir (enclosed waterbody).  
+- **Effects:** Oscillating water levels, boats striking piers, lines snapping – all cited impacts of seismic seiches.  
+- **Exclusion of Tsunami:** The note states “No tsunami,” aligning with the card’s emphasis on distinction from tsunamis.
+
+*Operator Recommendations*  
+1. **Immediate Safety Measures** – Suspend docking operations until water level stabilizes; secure vessels and mooring lines.  
+2. **Monitoring** – Deploy short‑term water‑level gauges to track oscillation amplitude and period.  
+3. **Structural Inspection** – After the event, inspect piers, docks, and moorings for damage.  
+4. **Preparedness Planning** – Include seismic seiche scenarios in lake‑harbor emergency response plans; train staff on rapid securing of vessels after earthquakes.
+
+*Further Information Links* (from hazard card sources)  
+- USGS Earthquake Catalog & Seismic‑Induced Water‑Level Studies: https://earthquake.usgs.gov/  
+- NOAA NCEI Global Historical Tsunami Database (for contrast with tsunamis): https://www.ncei.noaa.gov/products/natural-hazards/tsunamis-earthquakes-volcanoes/tsunamis  
+- Academic literature on lake seiches (e.g., “Seismic Seiche Generation in Enclosed Water Bodies”).  
+
+*End of Report.*","True","scenario_runs_compare/20260220T152235Z/llm_only/gpt-oss-120b/TC5__RAW_MONITOR_ANOMALY_02_HAZARD_SEISMIC_SEICHE","**Direct Answer**
+
+```json
+{""hazard"":""not specified""}
+```
+
+**Detailed Operator‑Style Report**
+
+- **Observed anomalies / signatures**
+  - After a noticeable earthquake, the lake’s water level began oscillating rhythmically. [Memory:1]
+  - Boats repeatedly struck the pier/dock and mooring lines snapped. [Memory:1]
+  - No tsunami was reported; the phenomenon is confined to an inland body of water. [Memory:1]
+
+- **Why the chosen hazard matches (or does not match)**
+  - The description points to a lake‑bound standing wave caused by seismic shaking, which in hazard taxonomy corresponds to a *seiche*.  
+  - However, the term “seiche” or any explicit hazard label is **not present** in the provided context; only generic references to earthquakes and water level oscillations appear (Memory note and earthquake sample rows). [Memory:1] [Snippet]
+
+- **Close alternatives and why they were rejected**
+  1. **Tsunami** – Rejected because the report explicitly states “No tsunami.” [Memory:1]
+  2. **Earthquake‑induced landslide into water** – No evidence of landslide activity or debris in the note. [Memory:1]
+  3. **Storm surge** – The trigger is an earthquake, not atmospheric conditions; no storm data are provided. [Memory:1]
+
+- **What would confirm/deny the hazard classification**
+  - **Confirmatory measurements:**  
+    - Continuous water‑level gauge data showing long‑period oscillations (typical seiche periods).  
+    - Seismic records correlating ground motion with lake surface response.  
+    - Visual or video documentation of standing wave patterns in the lake.
+  - **Denial indicators:**  
+    - Detection of a propagating wave front moving outward from a shoreline, characteristic of a tsunami rather than a standing wave.  
+    - Evidence of localized water displacement caused by landslide debris.
+
+- **Operator recommendations**
+  - Deploy high‑resolution pressure transducers at multiple points around the lake to capture oscillation frequency and amplitude.  
+  - Correlate these measurements with nearby seismometer data to verify seismic triggering.  
+  - Issue temporary docking restrictions until wave activity subsides.
+
+- **Further information links** (not provided in context; would be sourced from standard hazard reference databases once a specific label is confirmed)."
+"TC6","RAW_MONITOR_ANOMALY_03_HAZARD_POWER_GRID_FAILURE_BLACKOUT","gpt-oss-120b","True","scenario_runs_compare/20260220T152235Z/simple_rag/gpt-oss-120b/TC6__RAW_MONITOR_ANOMALY_03_HAZARD_POWER_GRID_FAILURE_BLACKOUT","**Direct Answer**
+```json
+{""hazard_id"":""hazards:Hazard_Power_Grid_Failure_Blackout"",""label"":""Power Grid Failure / Blackout"",""confidence"":0.98,""evidence"":[""[Knowledge:145 hazards:Hazard_Power_Grid_Failure_Blackout] Sample data includes timestamp_utc,customers_out fields showing outage counts over time."",""Snippet shows a time series of customers_out values rising sharply then falling, matching the power‑grid outage pattern.""],""notes"":""Matches power‑grid blackout data format and content.""}
+```
+
+**Justification**
+- The snippet provides a minute‑resolution time series of **customers_out**, exactly the metric described in the *Power Grid Failure / Blackout* hazard card ([Knowledge:145])【1】.  
+- The pattern (rapid increase to a peak, then gradual recovery) is characteristic of an urban blackout event, as illustrated by the sample data in the same hazard card【2】.  
+- No other hazard cards describe **customers_out** or power‑outage metrics; meteorological, hydrological, biological, etc., cards use different variables (e.g., Kp, SST, discharge).  
+- The memory entry about a citywide power outage and related infrastructure failures aligns with the *Power Grid Failure / Blackout* classification【Memory:2】.  
+
+**Detailed Report**
+
+### Hazard Overview
+**Hazard:** Power Grid Failure / Blackout  
+**Group:** Technological  
+**Subtype:** Infrastructure Failure / Disruption  
+**Description:** A large‑scale loss of electric power service, often cascading across a grid, leading to widespread outages for residential, commercial, and critical infrastructure customers. Causes can include equipment failure, extreme weather, cyber attacks, or operational errors. Impacts range from loss of lighting and heating to disruption of communications, transportation, and emergency services.
+
+### Why This Match
+- **Data Structure:** The snippet lists timestamps paired with *customers_out* counts, identical to the sample schema in the hazard card (timestamp_utc, fips, customers_out, …)【1】.  
+- **Temporal Pattern:** The rapid rise from 120 to a peak of 8,600 customers out within 30 minutes, followed by a decline, mirrors typical blackout progression and restoration phases shown in the example data of the hazard card【2】.  
+- **Contextual Clues:** The accompanying memory note mentions a “citywide power outage” with related infrastructure failures (mobile network, traffic lights), directly supporting the classification as a power‑grid blackout event【Memory:2】.
+
+### Operator Recommendations
+1. **Immediate Response**
+   - Activate emergency power for critical facilities (hospitals, data centers) using backup generators.
+   - Deploy mobile communication units to restore basic voice/SMS services for first responders.
+2. **Public Communication**
+   - Issue real‑time outage updates via radio, TV, and social media; include estimated restoration times.
+   - Advise residents on safety measures (avoid elevator use, conserve battery power).
+3. **Restoration Priorities**
+   - Prioritize re‑energizing substations serving emergency services, water/wastewater plants, and hospitals.
+   - Coordinate with utility crews to isolate faulted sections and perform load balancing.
+4. **Post‑Event Analysis**
+   - Collect SCADA logs and outage duration data for root‑cause analysis (e.g., equipment failure vs. cyber intrusion).
+   - Review grid resilience measures; consider hardening critical nodes and implementing automated islanding.
+
+### Further Information Links
+- **Hazard Card Source:** Wikipedia & EIA power‑outage dataset – https://en.wikipedia.org/wiki/Power_outage  
+- **Utility Outage Data Repository:** U.S. Energy Information Administration (EIA) outage data – https://www.eia.gov/electricity/data.php  
+- **Best Practices for Blackout Management:** FEMA Power Outage Planning Guide – https://www.fema.gov/media-library/assets/documents/106896  
+
+*All citations refer to the provided knowledge base and snippet.*","True","scenario_runs_compare/20260220T152235Z/llm_only/gpt-oss-120b/TC6__RAW_MONITOR_ANOMALY_03_HAZARD_POWER_GRID_FAILURE_BLACKOUT","**Direct Answer**
+```json
+{""hazard"":""not specified""}
+```
+
+**Detailed Operator‑Style Report**
+
+- **Observed anomalies / signatures**
+  - Rapid increase in `customers_out` from 120 at 00:00 to a peak of 9,800 at 01:00, followed by a decline (SNIPPET).
+  - The pattern suggests a large‐scale loss and gradual restoration of service.
+
+- **Why the chosen hazard matches (or does not match)**
+  - The only hazard information in the provided context is a *citywide power outage* reported by the dispatch center [Memory:2].  
+  - No explicit mapping between the telemetry pattern and a specific hazard label (e.g., “Power Outage”, “Electrical Failure”) is given in the context. Therefore, we cannot definitively assign a hazard classification based solely on the snippet.
+
+- **Close alternatives and why they were rejected**
+  - *Fire / hazardous gases*: Mentioned in [Memory:1] but unrelated to the telemetry of customer outages.
+  - *Elevator emergencies*: Also noted in [Memory:2] but not reflected in the data pattern.
+  - Both alternatives lack any direct connection to the `customers_out` metric, so they are rejected.
+
+- **What would confirm or deny the hazard classification**
+  - Additional logs indicating loss of electrical service (e.g., feeder status, transformer alarms).  
+  - Reports from field crews confirming restoration activities matching the timeline of the customer‑out counts.  
+  - Correlation with outage management system entries that tag the event as a power interruption.
+
+*No further hazard cards or classification references are provided in the context.*"
+"TC7","MODIFIED_SAMPLE_PATTERN_01_HAZARD_HEAT_BURST","gpt-oss-120b","True","scenario_runs_compare/20260220T152235Z/simple_rag/gpt-oss-120b/TC7__MODIFIED_SAMPLE_PATTERN_01_HAZARD_HEAT_BURST","**Direct Answer**
+```json
+{""hazard_id"":""hazards:Hazard_Heat_Burst"",""label"":""Heat Burst"",""confidence"":0.8,""evidence"":[""[Knowledge:82 hazards:Hazard_Heat_Burst Heat Burst] BM25_TEXT_EN: Caused by hazard(s): Storm. Keywords: Satans Storm. ..."",""Snippet shows rapid temperature rise (79 °F → 87 °F), concurrent dew‑point drop (64 °F → 58 °F) and pressure decrease (1012.5 hPa → 1010.8 hPa) over a short period, matching the characteristic signature of a heat burst.""] ,""notes"":""Best match based on rapid warming with falling humidity and pressure.""}
+```
+
+**Detailed Report**
+
+- **Hazard Overview**
+  - **Name:** Heat Burst  
+  - **Group:** Meteorological  
+  - **Subtype:** Extreme Temperature  
+  - **Aliases:** Satans Storm; Heat burst  
+
+- **Why this Hazard Matches the Snippet**
+  - The time‑series records a **quick temperature increase** from 79 °F to a peak of 87 °F within 30 minutes, while **dew point and relative humidity fall sharply**, and **surface pressure drops** from 1012.5 hPa to 1010.8 hPa.  
+  - This pattern is precisely the defining behavior of a heat burst: a sudden, short‑lived spike in temperature accompanied by rapid drying and a falling barometric pressure after a storm system【Knowledge:82 hazards:Hazard_Heat_Burst】.  
+
+- **Operator Recommendations**
+  1. **Monitor** for further rapid temperature spikes and pressure changes; heat bursts can stress HVAC systems and cause discomfort or health risks, especially in vulnerable populations.  
+  2. **Issue advisories** if temperatures exceed safe thresholds (e.g., > 90 °F) with low humidity, recommending hydration and limiting outdoor activity.  
+  3. **Check forecast models** for post‑storm conditions that may trigger additional heat bursts; adjust alert levels accordingly.  
+
+- **Further Information Links**
+  - Wikipedia entry on Heat Burst: https://en.wikipedia.org/wiki/Heat_burst  
+  - Eric’s Weather Library (heat burst data): https://ericsweatherlibrary.com  
+  - NOAA Storm Events Database for related storm information.","True","scenario_runs_compare/20260220T152235Z/llm_only/gpt-oss-120b/TC7__MODIFIED_SAMPLE_PATTERN_01_HAZARD_HEAT_BURST","**Direct Answer**
+```json
+{""hazard"":""not specified""}
+```
+
+**Detailed Report**
+
+- **Observed anomalies / signatures**
+  - Steady increase in temperature from 79.0 °C to 87.2 °C over 35 min.
+  - Decrease in pressure from 1012.5 hPa to 1010.8 hPa.
+  - Gradual rise in humidity (relative) and wind speed.
+  - No precipitation or precipitation rate recorded (last column = 0.00).
+
+- **Why the chosen hazard matches**
+  - *Not specified*: No hazard cards, keywords, triggers, causes, or impact fields were provided in the context to map these telemetry trends to a specific hazard classification.
+
+- **Close alternatives and why they were rejected**
+  - *Heat wave* – plausible given rising temperature, but no supporting definition or criteria are available in the missing context.
+  - *Low‑pressure system* – pressure drop is observed, yet without contextual triggers or impact descriptions we cannot confirm this as the top‑1 hazard.
+  - *Storm development* – wind increase noted, but again lacking any referenced hazard metadata.
+
+- **What would confirm/deny**
+  - Access to the hazard knowledge base (e.g., cards containing `sampleData`, `keywords/altLabel`, `triggers/causes`, `impacts`) to compare telemetry patterns against defined thresholds.
+  - Additional sensor logs (e.g., precipitation, solar radiation) that could differentiate between heat‑related hazards and cyclonic events.
+  - Historical baseline data for the location to assess whether observed temperature/pressure changes exceed normal variability.
+
+*Without the required contextual hazard definitions, a definitive classification cannot be made.*"
+"TC8","MODIFIED_SAMPLE_PATTERN_02_HAZARD_SEISMIC_SEICHE","gpt-oss-120b","True","scenario_runs_compare/20260220T152235Z/simple_rag/gpt-oss-120b/TC8__MODIFIED_SAMPLE_PATTERN_02_HAZARD_SEISMIC_SEICHE","**Direct Answer**
+```json
+{""hazard_id"":""hazards:Hazard_Space_Weather_Solar_Storm"",""label"":""Space Weather (Solar Storm)"",""confidence"":0.85,""evidence"":[""[Knowledge:173 hazards:Hazard_Space_Weather_Solar_Storm] Sample data includes Bz_nT values such as -15.2, -18.7, -10.5 etc., which are signed integers of similar magnitude to the snippet’s values (e.g., 12, -11, 15)."",""[Knowledge:23 hazards:Hazard_Carrington_Event] Provides a solar‑storm related dataset with signed Bz_nT measurements comparable to the pattern shown.""],""notes"":""The alternating positive/negative numeric series matches typical near‑Earth magnetic field component recordings used for space‑weather hazard monitoring.""}
+```
+
+**Detailed Report**
+
+- **Hazard Overview**  
+  *Space Weather (Solar Storm)* refers to disturbances in the near‑Earth space environment caused by solar eruptions (flares, coronal mass ejections). These events are monitored via solar‑wind plasma and magnetic field parameters such as the Bz component (north–south IMF), which can take both positive and negative values on the order of ±10–20 nT.
+
+- **Why this match**  
+  The snippet presents a short time series of signed integers (0, 12, ‑11, 15, ‑14, 13, ‑10, 9). This pattern is characteristic of magnetic field component recordings (e.g., Bz_nT) used in space‑weather datasets. The knowledge cards for *Space Weather (Solar Storm)* and the *Carrington Event* both list sample data with Bz_nT values of similar magnitude and sign, providing direct evidence that the snippet likely originates from such a dataset.  
+
+- **Operator Recommendations**  
+  1. Treat this series as part of a space‑weather monitoring feed (e.g., OMNI solar‑wind magnetic field).  
+  2. Apply standard thresholds on Bz_nT (e.g., sustained southward Bz < ‑10 nT) to flag potential geomagnetic storm onset.  
+  3. Correlate with other parameters (solar wind speed, density, Kp/Dst indices) for comprehensive hazard assessment.  
+
+- **Further Information Links**  
+  - NASA OMNIWeb solar‑wind and geomagnetic index data: https://omniweb.gsfc.nasa.gov/  
+  - NOAA Space Weather Prediction Center (SWPC): https://www.swpc.noaa.gov/  
+  - Carrington Event reference page (for extreme case context): https://en.wikipedia.org/wiki/Carrington_Event","True","scenario_runs_compare/20260220T152235Z/llm_only/gpt-oss-120b/TC8__MODIFIED_SAMPLE_PATTERN_02_HAZARD_SEISMIC_SEICHE","**Direct Answer**
+```json
+{""hazard"":""not specified""}
+```
+
+**Detailed Operator‑Style Report**
+
+- **Observed anomalies / signatures**
+  - Alternating positive and negative values in the telemetry series (e.g., `12`, `-11`, `15`, `-14` …).
+  - Magnitude swings of roughly ±10–15 units on a per‑minute basis.
+  - No explicit timestamps beyond minute markers; no accompanying status or event codes.
+
+- **Why the chosen hazard matches**
+  - *Not specified*: The snippet provides raw numeric telemetry without any metadata, keywords, sample data descriptions, trigger definitions, or impact statements that could be linked to a known hazard classification. Consequently, there is no evidence in the provided material to map these readings to a specific hazard type.
+
+- **Close alternatives and why they were rejected**
+  - *Electrical fault* – would require fields such as voltage/current labels, overload triggers, or fault codes; none are present.
+  - *Mechanical vibration/imbalance* – typically accompanied by frequency spectra, RPM data, or vibration‑specific keywords; absent here.
+  - *Sensor noise or calibration error* – might be inferred from erratic sign changes, but without sensor specifications or error thresholds, this remains speculative.
+
+- **What would confirm/deny the hazard classification**
+  - Additional telemetry context: units (e.g., volts, degrees Celsius), sensor identifiers, and normal operating ranges.
+  - Event logs or alarm records indicating trigger conditions (over‑temperature, over‑current, pressure spikes, etc.).
+  - Correlated data streams (e.g., power supply status, mechanical speed) to establish causal relationships.
+
+- **Operator recommendations**
+  - Request full hazard taxonomy or reference cards that define possible classifications and their associated data fields.
+  - Obtain accompanying metadata for the telemetry series (sensor type, measurement units, normal limits).
+  - Collect concurrent system logs or alarm histories to provide the necessary evidence for a definitive hazard determination."
+"TC9","MODIFIED_SAMPLE_PATTERN_03_HAZARD_POWER_GRID_FAILURE_BLACKOUT","gpt-oss-120b","True","scenario_runs_compare/20260220T152235Z/simple_rag/gpt-oss-120b/TC9__MODIFIED_SAMPLE_PATTERN_03_HAZARD_POWER_GRID_FAILURE_BLACKOUT","**Direct Answer**
+```json
+{""hazard_id"":""hazards:Hazard_Power_Grid_Failure_Blackout"",""label"":""Power Grid Failure / Blackout"",""confidence"":0.55,""evidence"":[""[Knowledge:145 hazards:Hazard_Power_Grid_Failure_Blackout] The sample data shows a time‑series of outage metrics (timestamp, customers_out) that can exhibit a sudden jump when an outage begins."",""[Knowledge:20 hazards:Hazard_Blackout] Describes blackout impacts and typical data structures for power outages.""],""notes"":""The snippet displays a rapid increase in the measured value at 00:40, consistent with the onset of a large‑scale power outage where the number of customers affected spikes sharply.""}
+```
+
+**Detailed Report**
+
+- **Hazard Overview**
+  - **Name:** Power Grid Failure / Blackout  
+  - **Group:** Technological  
+  - **Subtype:** Infrastructure Failure / Disruption  
+  - **Typical Data:** Time‑stamped records of outage metrics such as number of customers affected, total customers, and outage percentage (e.g., `timestamp_utc,fips,customers_out,customers_total,outage_pct`).  
+
+- **Why This Hazard Matches the Snippet**
+  - The snippet is a simple two‑column time series (`time,value`) showing a relatively low baseline (≈50–62) that abruptly rises to ≈400 and stays elevated.  
+  - Such a pattern mirrors the typical signature of a power outage: before the event, few customers are out; when the grid fails, the count spikes sharply and then remains high while the outage persists.  
+  - The hazard card for **Power Grid Failure / Blackout** explicitly mentions “high‑frequency (e.g., 15‑minute) county‑level electric outage snapshots with customers‑out counts”【[Knowledge:145 hazards:Hazard_Power_Grid_Failure_Blackout]】, matching the structure of the provided data.  
+
+- **Operator Recommendations**
+  1. **Validate Data Source:** Confirm that the metric represents “customers out” or a similar outage indicator rather than another physical measurement.  
+  2. **Correlate with Grid Events:** Cross‑reference the timestamps with utility incident logs to verify the onset of an outage at 00:40.  
+  3. **Assess Impact Scope:** Use additional fields (e.g., total customers, outage percentage) if available to quantify the severity and geographic extent.  
+  4. **Trigger Response Protocols:** If this represents a real‑time detection of a blackout, initiate restoration crews, public communication, and load‑shedding strategies as per grid operator SOPs.  
+
+- **Further Information Links**
+  - NOAA Power Outage Data description: https://catalog.data.gov/dataset/eagle-i-outage-data  
+  - U.S. DOE OE‑417 Electric Emergency Incident Reports (critical infrastructure failures): httpshttps://www.oe.netl.doe.gov/OE417_annual_summary.aspx  
+  - General blackout mitigation guidance (IEEE, NERC): https://www.nerc.com/standards/blackout-mitigation  
+
+*All evidence and reasoning are derived solely from the provided knowledge base.*","True","scenario_runs_compare/20260220T152235Z/llm_only/gpt-oss-120b/TC9__MODIFIED_SAMPLE_PATTERN_03_HAZARD_POWER_GRID_FAILURE_BLACKOUT","**Direct Answer**
+```json
+{""hazard_classification"":""not specified""}
+```
+
+**Detailed Report**
+
+- **Observed anomalies / signatures**
+  - No hazard classification information is available in the provided context.
+  - The telemetry snippet shows a rapid increase from 62 to 400 units between 00:30 and 00:40, followed by a plateau around 410‑420 units for the next hour.  
+    *However, without reference hazard definitions (e.g., sampleData ranges, keywords, triggers, impacts), these patterns cannot be mapped to a specific hazard.*
+
+- **Why the chosen hazard matches**
+  - *Not specified*: The required fields such as `sampleData`, `keywords/altLabel`, `triggers/causes`, or `impacts` are absent from the context, so no evidence can support any particular hazard classification.
+
+- **Close alternatives and why they were rejected**
+  1. **Thermal runaway** – would require temperature‑related sample data and triggers; not present.
+  2. **Pressure surge** – would need pressure units or related keywords; absent.
+  3. **Electrical overload** – would need voltage/current descriptors; missing.
+
+- **What would confirm/deny**
+  - Access to the hazard knowledge base containing:
+    - Sample data ranges and typical trajectories for each hazard type.
+    - Keywords, alternative labels, triggers, causes, and impact descriptions.
+  - Correlation of the telemetry pattern (sharp rise → plateau) with those documented signatures.
+
+- **Operator Recommendations**
+  - Obtain the relevant hazard classification cards or database entries that define expected telemetry signatures.
+  - Provide unit labels for the telemetry values (e.g., °C, psi, A) to enable proper mapping.
+  - Supply any known system context (equipment type, operating limits) to narrow down possible hazards.
+
+- **Further Information Links**
+  - *Not specified* – no hazard card sources are available in the current context."

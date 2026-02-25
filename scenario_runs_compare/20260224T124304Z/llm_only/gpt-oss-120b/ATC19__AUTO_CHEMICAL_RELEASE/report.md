@@ -1,0 +1,21 @@
+# Report
+
+- Method: `llm_only`
+- Model: `gpt-oss-120b`
+
+## Question
+
+Hazard classification (Top-1). Use ONLY CONTEXT as evidence.
+
+Output requirements:
+- Direct Answer: ONE-LINE JSON only, schema:
+  {"hazard_id":"...","label":"...","confidence":0.0,"evidence":["[Knowledge:.. ...]"],"notes":"short"}
+- Do not add any additional text.
+
+SNIPPET:
+Sample data for Chemical problem
+# note: minor variation
+
+## Final Answer
+
+{"hazard_id":"unknown","label":"unknown","confidence":0.1,"evidence":[],"notes":"insufficient information"}

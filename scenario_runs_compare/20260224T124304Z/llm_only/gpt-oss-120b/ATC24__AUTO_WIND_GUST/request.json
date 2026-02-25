@@ -1,0 +1,34 @@
+{
+  "question": "Hazard classification (Top-1). Use ONLY CONTEXT as evidence.\n\nOutput requirements:\n- Direct Answer: ONE-LINE JSON only, schema:\n  {\"hazard_id\":\"...\",\"label\":\"...\",\"confidence\":0.0,\"evidence\":[\"[Knowledge:.. ...]\"],\"notes\":\"short\"}\n- Do not add any additional text.\n\nSNIPPET:\nstation,datetime_utc,wind_speed_m_s,wind_gust_m_s,wind_dir_deg,air_temp_c\nKSFO,2024-01-4T10:56Z,15.4,26.964,280,12.2\nKSFO,2024-1-4T11:56Z,14.9,24.7,285,11.603",
+  "llm": {
+    "base_url": "http://localhost:1234/v1",
+    "model": "gpt-oss-120b",
+    "api_key": "lm-studio",
+    "temperature": 0.2,
+    "max_tokens": 131072
+  },
+  "retrieval": {
+    "top_k": {
+      "Knowledge": 250,
+      "Memory": 250,
+      "Experiences": 0,
+      "Environment": 0,
+      "OpsState": 0
+    },
+    "recent_k": {
+      "Memory": 250
+    },
+    "per_doc_chars": 1200
+  },
+  "corpora": {
+    "Knowledge": "hazard_cards_v5.json",
+    "Experiences": "experiences.json",
+    "Environment": {
+      "items": []
+    },
+    "Memory": "scenario-01/no-memory.json"
+  },
+  "judge": {
+    "enabled": false
+  }
+}

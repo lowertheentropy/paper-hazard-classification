@@ -1,0 +1,27 @@
+{
+  "final": "{\"hazard_id\":\"MHW\",\"label\":\"Marine Heatwave\",\"confidence\":0.9,\"evidence\":[\"Anomalies of +2.1 to +2.3 °C in SST indicate a marine heatwave\"],\"notes\":\"Elevated SST anomalies\"}",
+  "contexts": {
+    "pass1": {
+      "Memory": ""
+    },
+    "pass2": {}
+  },
+  "metrics": {
+    "llm_calls": 1,
+    "uses_retrieval": false,
+    "retrieval_corpora": [],
+    "citation_count": 0,
+    "min_citations_threshold": 2,
+    "has_min_citations": false,
+    "top_k_memory": 250,
+    "recent_k_memory": 250,
+    "memory_items_loaded": 0,
+    "output_mode": "keywords_only"
+  },
+  "meta": {
+    "mode": "llm_keywords_one_shot",
+    "model": "gpt-oss-120b",
+    "base_url": "http://localhost:1234/v1",
+    "question": "Hazard classification (Top-1). Use ONLY CONTEXT as evidence.\n\nOutput requirements:\n- Direct Answer: ONE-LINE JSON only, schema:\n  {\"hazard_id\":\"...\",\"label\":\"...\",\"confidence\":0.0,\"evidence\":[\"[Knowledge:.. ...]\"],\"notes\":\"short\"}\n- Do not add any additional text.\n\nSNIPPET:\nts_utc,lat,lon,sst_c,anom_c\n2014-08-15T12:00:00Z,40.0,-141.473,19.358,2.10\n2014-08-16T12:00:00Z,38.364,-140.0,17.523,2.23\n2014-8-16T12:00:00Z,40.768,-143.719,19.22,2.293"
+  }
+}

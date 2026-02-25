@@ -1,0 +1,34 @@
+{
+  "question": "Hazard classification (Top-1). Use ONLY CONTEXT as evidence.\n\nOutput requirements:\n- Direct Answer: ONE-LINE JSON only, schema:\n  {\"hazard_id\":\"...\",\"label\":\"...\",\"confidence\":0.0,\"evidence\":[\"[Knowledge:.. ...]\"],\"notes\":\"short\"}\n- Do not add any additional text.\n\nSNIPPET:\ntime,latitude,longitude,depth_km,mag,magType,place,event_id\n2026-02-19T22:14:12.340Z,37.766,-122.534,8.7,2.6,ml,\"10 km WSW of San Francisco, CA\",nc74910871\n2026-02-18T24:01:44.120Z,35.126,-118.243,11.492,3.119,ml,\"Los Angeles region, CA\",ci40672007",
+  "llm": {
+    "base_url": "http://localhost:1234/v1",
+    "model": "gpt-oss-120b",
+    "api_key": "lm-studio",
+    "temperature": 0.2,
+    "max_tokens": 131072
+  },
+  "retrieval": {
+    "top_k": {
+      "Knowledge": 250,
+      "Memory": 250,
+      "Experiences": 0,
+      "Environment": 0,
+      "OpsState": 0
+    },
+    "recent_k": {
+      "Memory": 250
+    },
+    "per_doc_chars": 1200
+  },
+  "corpora": {
+    "Knowledge": "hazard_cards_v5.json",
+    "Experiences": "experiences.json",
+    "Environment": {
+      "items": []
+    },
+    "Memory": "scenario-01/no-memory.json"
+  },
+  "judge": {
+    "enabled": false
+  }
+}

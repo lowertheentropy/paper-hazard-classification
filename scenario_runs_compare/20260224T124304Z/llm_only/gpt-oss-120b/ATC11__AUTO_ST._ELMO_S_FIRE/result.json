@@ -1,0 +1,28 @@
+{
+  "final": "{\"hazard_id\":\"thunderstorm\",\"label\":\"Thunderstorm\",\"confidence\":0.9,\"evidence\":[\"KJFK 120251Z ... -RA ... LTG DSNT ALQDS\",\"PHNL 32949Z ... TSRA ... RMK TS OHD\"],\"notes\":\"Observed thunderstorm activity with lightning and rain\"}",
+  "contexts": {
+    "pass1": {
+      "Memory": ""
+    },
+    "pass2": {}
+  },
+  "metrics": {
+    "llm_calls": 1,
+    "uses_retrieval": false,
+    "retrieval_corpora": [],
+    "citation_count": 0,
+    "min_citations_threshold": 2,
+    "has_min_citations": false,
+    "top_k_memory": 250,
+    "recent_k_memory": 250,
+    "memory_items_loaded": 0,
+    "output_mode": "keywords_only"
+  },
+  "meta": {
+    "mode": "llm_keywords_one_shot",
+    "model": "gpt-oss-120b",
+    "base_url": "http://localhost:1234/v1",
+    "question": "Hazard classification (Top-1). Use ONLY CONTEXT as evidence.\n\nOutput requirements:\n- Direct Answer: ONE-LINE JSON only, schema:\n  {\"hazard_id\":\"...\",\"label\":\"...\",\"confidence\":0.0,\"evidence\":[\"[Knowledge:.. ...]\"],\"notes\":\"short\"}\n- Do not add any additional text.\n\nSNIPPET:\nstation,valid_time_utc,metar,remarks\nKJFK,2024-09-12T02:51Z,\"KJFK 120251Z 4200G29KT 10SM -RA SCT19 BKN34 18/16 A2992\",\"RMK AO2 LTG DSNT ALQDS\"\nPHNL,2023-7-03T11:55Z,\"PHNL 32949Z 6973G32KT 3SM TSRA FEW13 BKN030 25/24 A2988\",\"RMK TS OHD\"",
+    "method": "llm_only"
+  }
+}

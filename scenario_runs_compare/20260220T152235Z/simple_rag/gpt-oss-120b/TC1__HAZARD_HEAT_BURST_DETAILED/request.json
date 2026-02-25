@@ -1,0 +1,36 @@
+{
+  "question": "Hazard classification (Top-1). Use ONLY CONTEXT as evidence.\n\nOutput requirements:\n- Direct Answer: ONE-LINE JSON as specified by the simple-rag prompt.\n- After the JSON, write a detailed, operator-style report:\n  * Observed anomalies / signatures (bullet list)\n  * Why the chosen hazard matches (cite specific retrieved fields: sampleData, keywords/altLabel, triggers/causes, impacts)\n  * 1–3 close alternatives and why they were rejected (with citations)\n  * What would confirm/deny (additional measurements / logs).\n\n\n\nSNIPPET:\nAt 00:05 local time the temperature jumps rapidly into the mid-80s F while humidity drops and gusty winds appear; within minutes values partially recover. Witnesses describe a sudden \"hot blast\" with strong downslope wind, but no wildfire is reported.\n\nADDITIONAL REQUIREMENTS:\n- After the Direct Answer JSON, provide a Detailed Report with: hazard overview; why this match (with citations); operator recommendations; further information links (from cited hazard card sources).",
+  "llm": {
+    "base_url": "http://localhost:1234/v1",
+    "model": "gpt-oss-120b",
+    "api_key": "lm-studio",
+    "temperature": 0.2,
+    "max_tokens": 131072
+  },
+  "retrieval": {
+    "top_k": {
+      "Knowledge": 250,
+      "Memory": 250,
+      "Experiences": 250,
+      "Environment": 250,
+      "OpsState": 250
+    },
+    "recent_k": {
+      "Memory": 250,
+      "Environment": 250,
+      "OpsState": 250,
+      "Knowledge": 250,
+      "Experiences": 250
+    },
+    "per_doc_chars": 1200
+  },
+  "corpora": {
+    "Knowledge": "hazard_cards_v5.json",
+    "Experiences": "experiences.json",
+    "Environment": "environment.json",
+    "Memory": "scenario-01/memory-1769412000000.json"
+  },
+  "judge": {
+    "enabled": false
+  }
+}

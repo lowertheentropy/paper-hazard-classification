@@ -1,0 +1,40 @@
+# LLM Baseline Report (One-shot, keyword-output)
+
+- **Mode:** `llm_keywords_one_shot`
+- **Model:** `gpt-oss-120b`
+- **Base URL:** `http://localhost:1234/v1`
+
+## Question
+Hazard classification (Top-1). Use ONLY CONTEXT as evidence.
+
+Output requirements:
+- Direct Answer: ONE-LINE JSON only, schema:
+  {"hazard_id":"...","label":"...","confidence":0.0,"evidence":["[Knowledge:.. ...]"],"notes":"short"}
+- Do not add any additional text.
+
+SNIPPET:
+station,valid_time_utc,metar,remarks
+KJFK,2024-09-12T02:51Z,"KJFK 120251Z 4200G29KT 10SM -RA SCT19 BKN34 18/16 A2992","RMK AO2 LTG DSNT ALQDS"
+PHNL,2023-7-03T11:55Z,"PHNL 32949Z 6973G32KT 3SM TSRA FEW13 BKN030 25/24 A2988","RMK TS OHD"
+
+## Final Answer
+{"hazard_id":"thunderstorm","label":"Thunderstorm","confidence":0.9,"evidence":["KJFK 120251Z ... -RA ... LTG DSNT ALQDS","PHNL 32949Z ... TSRA ... RMK TS OHD"],"notes":"Observed thunderstorm activity with lightning and rain"}
+
+## Metrics
+```json
+{
+  "llm_calls": 1,
+  "uses_retrieval": false,
+  "retrieval_corpora": [],
+  "citation_count": 0,
+  "min_citations_threshold": 2,
+  "has_min_citations": false,
+  "top_k_memory": 250,
+  "recent_k_memory": 250,
+  "memory_items_loaded": 0,
+  "output_mode": "keywords_only"
+}
+```
+
+## Retrieved Context (Memory-only)
+_none_

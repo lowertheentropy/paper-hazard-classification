@@ -1,0 +1,27 @@
+{
+  "final": "{\"hazard_id\":\"GNSS_INT\",\"label\":\"GPS interference\",\"confidence\":0.92,\"evidence\":[\"[Knowledge:Intermittent GPS signal; reverted to inertial nav]\",\"[Knowledge:Reported sudden position offset; RAIM alert]\"],\"notes\":\"Multiple GNSS anomalies suggest intentional interference\"}",
+  "contexts": {
+    "pass1": {
+      "Memory": ""
+    },
+    "pass2": {}
+  },
+  "metrics": {
+    "llm_calls": 1,
+    "uses_retrieval": false,
+    "retrieval_corpora": [],
+    "citation_count": 2,
+    "min_citations_threshold": 2,
+    "has_min_citations": true,
+    "top_k_memory": 250,
+    "recent_k_memory": 250,
+    "memory_items_loaded": 0,
+    "output_mode": "keywords_only"
+  },
+  "meta": {
+    "mode": "llm_keywords_one_shot",
+    "model": "gpt-oss-120b",
+    "base_url": "http://localhost:1234/v1",
+    "question": "Hazard classification (Top-1). Use ONLY CONTEXT as evidence.\n\nOutput requirements:\n- Direct Answer: ONE-LINE JSON only, schema:\n  {\"hazard_id\":\"...\",\"label\":\"...\",\"confidence\":0.0,\"evidence\":[\"[Knowledge:.. ...]\"],\"notes\":\"short\"}\n- Do not add any additional text.\n\nSNIPPET:\nreport_id,ts_utc,lat,lon,platform,issue_type,impact,notes\nNAVCEN-1,2025-04-03T19:22:00Z,36.85,28.27,maritime,\"jamming suspected\",\"loss_of_fix\",\"Intermittent GPS signal; reverted to inertial nav\"\nNAVCEN-2,2025-04-04T5:10:00Z,26.571,55.27,aviation,\"spoofing suspected\",\"position_jump\",\"Reported sudden position offset; RAIM alert\""
+  }
+}

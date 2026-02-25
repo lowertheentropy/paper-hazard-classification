@@ -1,0 +1,36 @@
+{
+  "question": "Hazard classification (Top-1). Use ONLY CONTEXT as evidence.\n\n    Output requirements:\n    - Direct Answer: ONE-LINE JSON as specified by the simple-rag prompt.\n    - After the JSON, write a detailed, operator-style report:\n      * Observed anomalies / signatures (bullet list)\n      * Why the chosen hazard matches (cite specific retrieved fields: sampleData, keywords/altLabel, triggers/causes, impacts)\n      * 1–3 close alternatives and why they were rejected (with citations)\n      * What would confirm/deny (additional measurements / logs).\n\n    No natural-language hints are provided. The snippet is a raw telemetry; infer the most plausible hazard label from the pattern.\n\n    SNIPPET:\n    timestamp,customers_out\n00:00,120\n00:05,145\n00:10,310\n00:15,980\n00:20,2400\n00:25,5100\n00:30,8600\n00:35,8200\n00:40,6100\n00:45,3900\n00:50,2200\n00:55,1400\n01:00,900\n\nADDITIONAL REQUIREMENTS:\n- After the Direct Answer JSON, provide a Detailed Report with: hazard overview; why this match (with citations); operator recommendations; further information links (from cited hazard card sources).",
+  "llm": {
+    "base_url": "http://localhost:1234/v1",
+    "model": "gpt-oss-120b",
+    "api_key": "lm-studio",
+    "temperature": 0.2,
+    "max_tokens": 131072
+  },
+  "retrieval": {
+    "top_k": {
+      "Knowledge": 250,
+      "Memory": 250,
+      "Experiences": 250,
+      "Environment": 250,
+      "OpsState": 250
+    },
+    "recent_k": {
+      "Memory": 250,
+      "Environment": 250,
+      "OpsState": 250,
+      "Knowledge": 250,
+      "Experiences": 250
+    },
+    "per_doc_chars": 1200
+  },
+  "corpora": {
+    "Knowledge": "hazard_cards_v5.json",
+    "Experiences": "experiences.json",
+    "Environment": "environment.json",
+    "Memory": "scenario-01/memory-1769410514684.json"
+  },
+  "judge": {
+    "enabled": false
+  }
+}

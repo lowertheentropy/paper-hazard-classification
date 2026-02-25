@@ -1,0 +1,28 @@
+{
+  "final": "{\"hazard_id\":\"H001\",\"label\":\"Wildfire\",\"confidence\":0.92,\"evidence\":[\"[Knowledge: FRP values of 12.287 and 35.1 indicate active fires]\"],\"notes\":\"Detected fire radiative power suggests wildfire\"}",
+  "contexts": {
+    "pass1": {
+      "Memory": ""
+    },
+    "pass2": {}
+  },
+  "metrics": {
+    "llm_calls": 1,
+    "uses_retrieval": false,
+    "retrieval_corpora": [],
+    "citation_count": 1,
+    "min_citations_threshold": 2,
+    "has_min_citations": false,
+    "top_k_memory": 250,
+    "recent_k_memory": 250,
+    "memory_items_loaded": 0,
+    "output_mode": "keywords_only"
+  },
+  "meta": {
+    "mode": "llm_keywords_one_shot",
+    "model": "gpt-oss-120b",
+    "base_url": "http://localhost:1234/v1",
+    "question": "Hazard classification (Top-1). Use ONLY CONTEXT as evidence.\n\nOutput requirements:\n- Direct Answer: ONE-LINE JSON only, schema:\n  {\"hazard_id\":\"...\",\"label\":\"...\",\"confidence\":0.0,\"evidence\":[\"[Knowledge:.. ...]\"],\"notes\":\"short\"}\n- Do not add any additional text.\n\nSNIPPET:\nlatitude,longitude,acq_date,acq_time,satellite,confidence,frp\n37.123,-123.429,2024-07-15,2030,N,nominal,12.287\n37.130,-121.470,2024-7-15,2036,N,high,35.1",
+    "method": "llm_only"
+  }
+}

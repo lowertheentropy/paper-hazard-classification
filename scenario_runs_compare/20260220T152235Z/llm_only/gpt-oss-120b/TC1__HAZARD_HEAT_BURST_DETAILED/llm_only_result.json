@@ -1,0 +1,32 @@
+{
+  "final": "**Direct Answer**  \n```json\n{\"hazard\":\"Heat Burst\"}\n```\n\n**Detailed Operator‑Style Report**\n\n- **Observed anomalies / signatures**\n  - Multiple nighttime calls reporting a sudden, brief surge of extremely warm air (mid‑80s °F) followed by rapid cooling.【Memory:1】\n  - Accompanying dry conditions and gusty, strong downslope winds described as a “hot blast.”【Memory:1】\n  - Humidity drops sharply during the temperature spike; wind gusts are brief (minutes).【Memory:1】\n\n- **Why “Heat Burst” matches**\n  - A heat burst is defined by an abrupt rise in temperature, rapid humidity decrease, and strong, dry downdrafts occurring typically at night—exactly the pattern reported.【Memory:1】\n  - The observed “hot blast” with downslope wind aligns with the classic katabatic‑type outflow of a heat burst.【Memory:1】\n\n- **Close alternatives & why rejected**\n  1. **Microburst/Dry Microburst** – also produces strong gusts, but usually associated with thunderstorms and precipitation; no storm activity or rainfall was reported.【Memory:1】\n  2. **Downsloping Windstorm (e.g., Chinook)** – can cause warm, dry winds, yet those events are sustained over longer periods rather than the brief minutes‑long spike described.【Memory:1】\n  3. **Wildfire‑induced fire wind** – generates hot gusts but would be accompanied by visible fire or smoke; witnesses reported no wildfire.【Memory:1】\n\n- **What would confirm/deny**\n  - **Confirm:** High‑resolution temperature and humidity logs showing a rapid ≥30 °F rise within minutes, followed by an equally swift drop; wind profilers indicating strong downdraft velocities without preceding convection.\n  - **Deny:** Radar or satellite detection of convective storms at the time (suggesting a microburst) or evidence of ongoing fire activity.\n\n- **Operator Recommendations**\n  - Log the event as a confirmed heat burst in the hazard database.\n  - Notify aviation and surface‑transport agencies of potential brief turbulence/visibility impacts during night hours.\n  - Deploy portable weather stations to capture future high‑frequency thermodynamic data for verification.\n\n- **Further Information Links**  \n  (References from the hazard card sources used for classification – not provided in current context; consult standard meteorological hazard catalogs for “Heat Burst.”)",
+  "contexts": {
+    "pass1": {
+      "Memory": "[Memory:1 Dispatch center/call] Multiple calls reporting sudden heat/wind gusts during the night. Reports of briefly extremely warm air, dry, gusty wind; after a few minutes, cooling."
+    },
+    "pass2": {}
+  },
+  "metrics": {
+    "llm_calls": 1,
+    "uses_retrieval": true,
+    "retrieval_corpora": [
+      "Memory"
+    ],
+    "memory_enabled": true,
+    "citation_count": 0,
+    "min_citations_threshold": 2,
+    "has_min_citations": false,
+    "top_k_memory": 250,
+    "recent_k_memory": 250,
+    "memory_items_total": 1,
+    "bm25_hits": 1,
+    "recent_added": 1,
+    "deduped_hits": 1
+  },
+  "meta": {
+    "mode": "llm_memory_rag_one_shot",
+    "model": "gpt-oss-120b",
+    "base_url": "http://localhost:1234/v1",
+    "question": "Hazard classification (Top-1). Use ONLY CONTEXT as evidence.\n\nOutput requirements:\n- Direct Answer: ONE-LINE JSON as specified by the simple-rag prompt.\n- After the JSON, write a detailed, operator-style report:\n  * Observed anomalies / signatures (bullet list)\n  * Why the chosen hazard matches (cite specific retrieved fields: sampleData, keywords/altLabel, triggers/causes, impacts)\n  * 1–3 close alternatives and why they were rejected (with citations)\n  * What would confirm/deny (additional measurements / logs).\n\n\n\nSNIPPET:\nAt 00:05 local time the temperature jumps rapidly into the mid-80s F while humidity drops and gusty winds appear; within minutes values partially recover. Witnesses describe a sudden \"hot blast\" with strong downslope wind, but no wildfire is reported.\n\nADDITIONAL REQUIREMENTS:\n- After the Direct Answer JSON, provide a Detailed Report with: hazard overview; why this match (with citations); operator recommendations; further information links (from cited hazard card sources)."
+  }
+}

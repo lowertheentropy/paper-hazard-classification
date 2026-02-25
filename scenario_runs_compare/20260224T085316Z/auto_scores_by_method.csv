@@ -1,0 +1,2 @@
+"method","model","n","n_ok","n_correct","accuracy_over_all","accuracy_over_ok"
+"simple_rag","gpt-oss-120b","30","30","17","0.5666666666666667","0.5666666666666667"

@@ -1,0 +1,27 @@
+{
+  "final": "{\"hazard_id\":\"volcanic_eruption\",\"label\":\"Volcanic Eruption\",\"confidence\":0.9,\"evidence\":[],\"notes\":\"Based on VEI values indicating eruption activity\"}",
+  "contexts": {
+    "pass1": {
+      "Memory": ""
+    },
+    "pass2": {}
+  },
+  "metrics": {
+    "llm_calls": 1,
+    "uses_retrieval": false,
+    "retrieval_corpora": [],
+    "citation_count": 0,
+    "min_citations_threshold": 2,
+    "has_min_citations": false,
+    "top_k_memory": 250,
+    "recent_k_memory": 250,
+    "memory_items_loaded": 0,
+    "output_mode": "keywords_only"
+  },
+  "meta": {
+    "mode": "llm_keywords_one_shot",
+    "model": "gpt-oss-120b",
+    "base_url": "http://localhost:1234/v1",
+    "question": "Hazard classification (Top-1). Use ONLY CONTEXT as evidence.\n\nOutput requirements:\n- Direct Answer: ONE-LINE JSON only, schema:\n  {\"hazard_id\":\"...\",\"label\":\"...\",\"confidence\":0.0,\"evidence\":[\"[Knowledge:.. ...]\"],\"notes\":\"short\"}\n- Do not add any additional text.\n\nSNIPPET:\nvolcano_number,volcano_name,eruption_number,start_date,end_date,vei,latitude,longitude\n370049,Etna,12345,2021-02-16,2021-03-1,3,37.734,15.004\n271313,Nyiragongo,67890,2021-05-22,2021-05-23,2,-1.454,29.25"
+  }
+}
