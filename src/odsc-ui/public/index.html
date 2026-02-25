@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ODSC Fragebogen</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="brand">ODSC Human-Evaluation</div>
+    <div class="status" id="status"></div>
+  </div>
+
+  <div class="layout">
+    <div class="left">
+      <div class="card">
+        <h2>Bewerter:in</h2>
+        <label>Vorname</label>
+        <input id="firstName" type="text" placeholder="z. B. Alex" />
+        <button id="startBtn">Start</button>
+        <p class="hint">
+          Berichte werden zufällig ausgewählt. Die interne Report-ID wird gespeichert, aber dir nicht angezeigt.
+        </p>
+      </div>
+
+      <div class="card hidden" id="formCard">
+        <h2>ODSC-Bewertung</h2>
+
+        <div class="smallmuted" id="progress"></div>
+
+        <div class="rubric">
+          <label class="radio">
+            <input type="radio" name="odsc" value="0" />
+            <span><b>0</b> Nicht nutzbar</span>
+          </label>
+          <label class="radio">
+            <input type="radio" name="odsc" value="1" />
+            <span><b>1</b> Eingeschränkt</span>
+          </label>
+          <label class="radio">
+            <input type="radio" name="odsc" value="2" />
+            <span><b>2</b> Nutzbar</span>
+          </label>
+          <label class="radio">
+            <input type="radio" name="odsc" value="3" />
+            <span><b>3</b> Entscheidungsreif</span>
+          </label>
+        </div>
+
+        <div class="sectionHead">
+          <h3>Erfolgsmerkmale (optional)</h3>
+        </div>
+
+        <div class="checks">
+          <label class="checkRow">
+            <input type="checkbox" id="dimLocalfit" />
+            <span>Lokal verankert (Constraints + Details)</span>
+            <button type="button" class="help"
+              data-tip="Bindet Aussagen an konkrete Details aus dem Retrieval (Messwerte, Begriffe, Randbedingungen). Keine Lehrbuch-Antwort ohne Bezug; Unbekanntes als „not specified“. EN: Grounds claims in retrieved specifics (values, constraints, local terminology). Avoids generic textbook advice; marks unknowns as “not specified”."
+              aria-label="Mehr Infos">ⓘ</button>
+          </label>
+
+          <label class="checkRow">
+            <input type="checkbox" id="dimMinimal" />
+            <span>Minimale, gezielte Rückfragen</span>
+            <button type="button" class="help"
+              data-tip="Stellt nur wenige, entscheidungsrelevante Rückfragen/Checks zur Unterscheidung plausibler Informationen. Kein breiter Fragenkatalog. EN: Asks only a small number of decisive follow-ups/checks to disambiguate plausible information—no broad refusals or long question lists."
+              aria-label="Mehr Infos">ⓘ</button>
+          </label>
+        </div>
+
+        <div class="sectionHead">
+          <h3>Fehlermuster (optional)</h3>
+        </div>
+
+        <div class="checks">
+          <label class="checkRow">
+            <input type="checkbox" id="failRetrieval" />
+            <span>Retrieval verfehlt → generischer Output</span>
+            <button type="button" class="help"
+              data-tip="Relevante Informationen fehlen im Retrieval oder sind zu weit unten. Ergebnis wirkt allgemein, Zitate passen nicht oder fehlen. EN: Key information were not retrieved (or too low-ranked). Output becomes generic; citations are missing or don’t support claims."
+              aria-label="Mehr Infos">ⓘ</button>
+          </label>
+
+          <label class="checkRow">
+            <input type="checkbox" id="failOverOrDrift" />
+            <span>Überkonfident ODER Allgemeinwissen-Drift</span>
+            <button type="button" class="help"
+              data-tip="DE: Hohe Sicherheit trotz schwacher Evidenz ODER driftet zu unbelegtem Allgemeinwissen. Fehlende Parameter nicht als „not specified“ markiert. EN: Too confident despite limited evidence OR drifts into uncited common-knowledge. Missing parameters not marked as “not specified”."
+              aria-label="Mehr Infos">ⓘ</button>
+          </label>
+        </div>
+
+        <h3>Kommentar (optional)</h3>
+        <textarea id="comment" rows="4" placeholder="Kurze Notiz..."></textarea>
+
+        <div class="actions">
+          <button id="nextBtn">Weiter</button>
+            <button class="secondary" id="genSummaryBtn">summary.csv erzeugen</button>
+        </div>
+
+        <div class="links">
+        <a href="/data/memory.json" target="_blank">memory.json</a>
+        <a href="/data/knowledge.json" target="_blank">knowledge.json</a>
+        <a href="/data/experience.json" target="_blank">experience.json</a>
+        <a href="/data/environment.json" target="_blank">environment.json</a>
+          <a href="/api/evaluations.csv" target="_blank">Open evaluations.csv</a>
+          <a href="/api/summary.csv" target="_blank">Open summary.csv</a>
+        </div>
+
+        <div class="links">
+          <button type="button" class="secondary" id="downloadEvalBtn">evaluations.csv herunterladen</button>
+          <button type="button" class="secondary" id="downloadSummaryBtn">summary.csv herunterladen</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="right">
+      <iframe id="reportFrame" title="Bericht"></iframe>
+    </div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
