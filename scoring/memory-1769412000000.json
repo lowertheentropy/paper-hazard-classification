@@ -1,0 +1,13 @@
+[
+  {
+    "eventId": "evt_000091",
+    "einsatzNr": "000091",
+    "realT": 1769412000000,
+    "simT": 560000,
+    "content": "Multiple calls reporting sudden heat/wind gusts during the night. Reports of briefly extremely warm air, dry, gusty wind; after a few minutes, cooling.",
+    "meta": "Dispatch center/call",
+    "vehicleType": "DISPATCH",
+    "vehicleId": "ils_1",
+    "callsign": "ILS"
+  }
+]

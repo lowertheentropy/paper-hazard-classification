@@ -1,0 +1,24 @@
+[
+  {
+    "eventId": "evt_000081",
+    "einsatzNr": "000081",
+    "realT": 1769410514684,
+    "simT": 552706,
+    "content": "FL M 2/46/1: Heavy smoke from the cable duct/cable route, firefighting in progress; danger from hazardous gases still persists, Status 4.",
+    "meta": "On scene",
+    "vehicleType": "FW_HLF",
+    "vehicleId": "hlf_3",
+    "callsign": "FL M 2/46/1"
+  },
+  {
+    "eventId": "evt_000086",
+    "einsatzNr": "000086",
+    "realT": 1769411178376,
+    "simT": 553900,
+    "content": "Dispatch center: Citywide power outage. Mobile network unstable, traffic lights down, multiple reports of elevator emergencies. Grid operator reports rising outage numbers, with partial restoration in some streets/blocks.",
+    "meta": "Dispatch center/situation",
+    "vehicleType": "DISPATCH",
+    "vehicleId": "ils_1",
+    "callsign": "ILS"
+  }
+]

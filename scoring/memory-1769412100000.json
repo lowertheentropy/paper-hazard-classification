@@ -1,0 +1,13 @@
+[
+  {
+    "eventId": "evt_000092",
+    "einsatzNr": "000092",
+    "realT": 1769412100000,
+    "simT": 561000,
+    "content": "Harbor master: After a noticeable earthquake, the lake’s water level is oscillating rhythmically. Boats are repeatedly striking the pier/dock, lines are snapping. No tsunami—this is an inland body of water.",
+    "meta": "Situation note",
+    "vehicleType": "INFO",
+    "vehicleId": "harbor_1",
+    "callsign": "Harbor"
+  }
+]

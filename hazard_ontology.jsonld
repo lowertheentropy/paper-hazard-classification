@@ -1,0 +1,1356 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#causedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Activity"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#SeverityLevel"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#hasSeverity"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#causedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Activity"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#causedByHazard"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Hazard"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#causedByHazard"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Hazard"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#causedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Activity"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#causedByHazard"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Hazard"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#hasIncident"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Incident"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#hasLocation"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Location"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#TimeHorizon"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#hasHorizon"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Jurisdiction"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#hasJurisdiction"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#LikelihoodLevel"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#hasLikelihood"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/format",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/language",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/relation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/rights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/subject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/Box",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/ISO3166",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/ISO639-2",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/ISO639-3",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/Period",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/Point",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/RFC1766",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/RFC3066",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/RFC4646",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/RFC5646",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/URI",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/W3CDTF",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/abstract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/description"
+  }, {
+    "@id" : "http://purl.org/dc/terms/description"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/accessRights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/rights"
+  }, {
+    "@id" : "http://purl.org/dc/terms/rights"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/alternative",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/title"
+  }, {
+    "@id" : "http://purl.org/dc/terms/title"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/available",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/date"
+  }, {
+    "@id" : "http://purl.org/dc/terms/date"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/bibliographicCitation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/identifier"
+  }, {
+    "@id" : "http://purl.org/dc/terms/identifier"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/conformsTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/relation"
+  }, {
+    "@id" : "http://purl.org/dc/terms/relation"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/contributor"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/date"
+  }, {
+    "@id" : "http://purl.org/dc/terms/date"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/creator"
+  }, {
+    "@id" : "http://purl.org/dc/terms/contributor"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/date"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/dateAccepted",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/date"
+  }, {
+    "@id" : "http://purl.org/dc/terms/date"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/dateCopyrighted",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/date"
+  }, {
+    "@id" : "http://purl.org/dc/terms/date"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/dateSubmitted",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/date"
+  }, {
+    "@id" : "http://purl.org/dc/terms/date"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/description"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/extent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/format"
+  }, {
+    "@id" : "http://purl.org/dc/terms/format"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/format",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/format"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/hasFormat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/relation"
+  }, {
+    "@id" : "http://purl.org/dc/terms/relation"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/hasPart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/relation"
+  }, {
+    "@id" : "http://purl.org/dc/terms/relation"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/hasVersion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/relation"
+  }, {
+    "@id" : "http://purl.org/dc/terms/relation"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/identifier"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/isFormatOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/relation"
+  }, {
+    "@id" : "http://purl.org/dc/terms/relation"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/isPartOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/relation"
+  }, {
+    "@id" : "http://purl.org/dc/terms/relation"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/isReferencedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/relation"
+  }, {
+    "@id" : "http://purl.org/dc/terms/relation"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/isReplacedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/relation"
+  }, {
+    "@id" : "http://purl.org/dc/terms/relation"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/isRequiredBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/relation"
+  }, {
+    "@id" : "http://purl.org/dc/terms/relation"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/isVersionOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/relation"
+  }, {
+    "@id" : "http://purl.org/dc/terms/relation"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/date"
+  }, {
+    "@id" : "http://purl.org/dc/terms/date"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/language",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/language"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/rights"
+  }, {
+    "@id" : "http://purl.org/dc/terms/rights"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/medium",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/format"
+  }, {
+    "@id" : "http://purl.org/dc/terms/format"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/date"
+  }, {
+    "@id" : "http://purl.org/dc/terms/date"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/publisher"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/references",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/relation"
+  }, {
+    "@id" : "http://purl.org/dc/terms/relation"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/relation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/relation"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/replaces",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/relation"
+  }, {
+    "@id" : "http://purl.org/dc/terms/relation"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/requires",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/relation"
+  }, {
+    "@id" : "http://purl.org/dc/terms/relation"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/rights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/rights"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/source"
+  }, {
+    "@id" : "http://purl.org/dc/terms/relation"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/subject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/subject"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/tableOfContents",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/description"
+  }, {
+    "@id" : "http://purl.org/dc/terms/description"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/title"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/type"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/valid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/date"
+  }, {
+    "@id" : "http://purl.org/dc/terms/date"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "http://purl.org/dc/aboutdcmi#DCMI"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "DCMI Metadata Terms - other"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#Activity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#Activity_ITOperation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Activity"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#Activity_InadequateTraining",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Activity"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#Activity_PoorMaintenance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Activity"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#Activity_ResidentialUse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Activity"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#Agent_Hospital",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Agent"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#Agent_Residents",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Agent"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#AnthropogenicHazard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Hazard"
+  }, {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#Assessment_Blackout_2026_02",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.hazardontology.org/hazards#hasHorizon" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#TimeHorizon_Current"
+  } ],
+  "http://www.hazardontology.org/hazards#hasJurisdiction" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Jurisdiction_DE"
+  } ],
+  "http://www.hazardontology.org/hazards#hasLikelihood" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Likelihood_Possible"
+  } ],
+  "http://www.hazardontology.org/hazards#hasRisk" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Risk_BlackoutImpact"
+  } ],
+  "http://www.hazardontology.org/hazards#hasRiskLevel" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Risk_High"
+  } ],
+  "http://www.hazardontology.org/hazards#hasSeverity" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Severity_Catastrophic"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#RiskAssessment"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#Assessment_Flood_2026_02",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.hazardontology.org/hazards#hasHorizon" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#TimeHorizon_Current"
+  } ],
+  "http://www.hazardontology.org/hazards#hasJurisdiction" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Jurisdiction_DE"
+  } ],
+  "http://www.hazardontology.org/hazards#hasLikelihood" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Likelihood_Possible"
+  } ],
+  "http://www.hazardontology.org/hazards#hasRisk" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Risk_FloodImpact"
+  } ],
+  "http://www.hazardontology.org/hazards#hasRiskLevel" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Risk_Medium"
+  } ],
+  "http://www.hazardontology.org/hazards#hasSeverity" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Severity_Serious"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#RiskAssessment"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#Consequence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#Consequence_DataLoss",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Consequence"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#Consequence_HealthImpact",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Consequence"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#Consequence_Injury",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Consequence"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#Consequence_PropertyDamage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Consequence"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#Consequence_ServiceInterruption",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Consequence"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#ControlMeasure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#Control_EmergencyGenerator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.hazardontology.org/hazards#mitigates" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Risk_BlackoutImpact"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#ControlMeasure"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#Failure_PowerGridCollapse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Activity"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#Hazard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#Hazard_Blackout",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Power_outage"
+  } ],
+  "http://www.hazardontology.org/hazards#causedBy" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Activity_PoorMaintenance"
+  }, {
+    "@id" : "http://www.hazardontology.org/hazards#Failure_PowerGridCollapse"
+  } ],
+  "http://www.hazardontology.org/hazards#createsRisk" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Risk_BlackoutImpact"
+  } ],
+  "http://www.hazardontology.org/hazards#hasConsequence" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Consequence_DataLoss"
+  }, {
+    "@id" : "http://www.hazardontology.org/hazards#Consequence_ServiceInterruption"
+  } ],
+  "http://www.hazardontology.org/hazards#hasSampleData" : [ {
+    "@value" : "SampleData for Blackout"
+  } ],
+  "http://www.hazardontology.org/hazards#relatedToActivity" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Activity_ITOperation"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "de",
+    "@value" : "Blackout"
+  }, {
+    "@language" : "de",
+    "@value" : "Kaskadenausfall"
+  }, {
+    "@language" : "de",
+    "@value" : "Stromausfall"
+  }, {
+    "@language" : "de",
+    "@value" : "Stromnetzausfall"
+  }, {
+    "@language" : "en",
+    "@value" : "blackout"
+  }, {
+    "@language" : "en",
+    "@value" : "cascading failure"
+  }, {
+    "@language" : "en",
+    "@value" : "grid failure"
+  }, {
+    "@language" : "en",
+    "@value" : "power outage"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#Hazard_ChemicalRelease",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Chemical_spill"
+  } ],
+  "http://www.hazardontology.org/hazards#causedBy" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Activity_InadequateTraining"
+  } ],
+  "http://www.hazardontology.org/hazards#createsRisk" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Risk_ChemicalExposure"
+  } ],
+  "http://www.hazardontology.org/hazards#hasConsequence" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Consequence_HealthImpact"
+  } ],
+  "http://www.hazardontology.org/hazards#hasSampleData" : [ {
+    "@value" : "Sample data for Chemical problem"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Hazard"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "de",
+    "@value" : "Chemieunfall"
+  }, {
+    "@language" : "de",
+    "@value" : "Chemikalienverschüttung"
+  }, {
+    "@language" : "de",
+    "@value" : "Kontamination"
+  }, {
+    "@language" : "en",
+    "@value" : "chemical spill"
+  }, {
+    "@language" : "en",
+    "@value" : "contamination"
+  }, {
+    "@language" : "en",
+    "@value" : "hazardous materials spill"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#Hazard_Flood",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Flood"
+  } ],
+  "http://www.hazardontology.org/hazards#atLocation" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Location_RiverArea_Spree"
+  } ],
+  "http://www.hazardontology.org/hazards#causedBy" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Process_HeavyRainfall"
+  } ],
+  "http://www.hazardontology.org/hazards#createsRisk" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Risk_FloodImpact"
+  } ],
+  "http://www.hazardontology.org/hazards#hasConsequence" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Consequence_Injury"
+  }, {
+    "@id" : "http://www.hazardontology.org/hazards#Consequence_PropertyDamage"
+  } ],
+  "http://www.hazardontology.org/hazards#hasSampleData" : [ {
+    "@value" : "sample data for high water ... 5000 liters/minute/m2"
+  } ],
+  "http://www.hazardontology.org/hazards#relatedToActivity" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Activity_ResidentialUse"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "de",
+    "@value" : "Hochwasser"
+  }, {
+    "@language" : "en",
+    "@value" : "high water"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#Incident",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#Jurisdiction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#Jurisdiction_AT",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.hazardontology.org/hazards#iso3166Alpha2" : [ {
+    "@value" : "AT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Jurisdiction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Austria"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#Jurisdiction_DE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.hazardontology.org/hazards#iso3166Alpha2" : [ {
+    "@value" : "DE"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Jurisdiction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Germany"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#Jurisdiction_Global",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.hazardontology.org/hazards#iso3166Alpha2" : [ {
+    "@value" : "GLOBAL"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Jurisdiction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Global"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#LikelihoodLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#Likelihood_Likely",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#LikelihoodLevel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Likely"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#Likelihood_Possible",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#LikelihoodLevel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Possible"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#Likelihood_Rare",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#LikelihoodLevel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Rare"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#Location_RiverArea_Spree",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.hazardontology.org/hazards#exposes" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Agent_Residents"
+  } ],
+  "http://www.hazardontology.org/hazards#hasAssessment" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Assessment_Flood_2026_02"
+  } ],
+  "http://www.hazardontology.org/hazards#isRiskOf" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Hazard_Flood"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Location"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#NaturalHazard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Hazard"
+  }, {
+    "@id" : "_:genid3"
+  }, {
+    "@id" : "_:genid4"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#Process_HeavyRainfall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Activity"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#Risk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#RiskAssessment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid5"
+  }, {
+    "@id" : "_:genid6"
+  }, {
+    "@id" : "_:genid7"
+  }, {
+    "@id" : "_:genid8"
+  }, {
+    "@id" : "_:genid9"
+  }, {
+    "@id" : "_:genid10"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#RiskLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#Risk_BlackoutImpact",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.hazardontology.org/hazards#exposes" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Agent_Hospital"
+  } ],
+  "http://www.hazardontology.org/hazards#hasAssessment" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Assessment_Blackout_2026_02"
+  } ],
+  "http://www.hazardontology.org/hazards#mitigatedBy" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Control_EmergencyGenerator"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Risk"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#Risk_ChemicalExposure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.hazardontology.org/hazards#isRiskOf" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Risk_ChemicalExposure"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Risk"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#Risk_FloodImpact",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Risk"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#Risk_High",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#RiskLevel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "High"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#Risk_Low",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#RiskLevel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Low"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#Risk_Medium",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#RiskLevel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Medium"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#SeverityLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#Severity_Catastrophic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#SeverityLevel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Catastrophic"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#Severity_Minor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#SeverityLevel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Minor"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#Severity_Serious",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#SeverityLevel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Serious"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#TechnicalHazard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Hazard"
+  }, {
+    "@id" : "_:genid11"
+  }, {
+    "@id" : "_:genid12"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#TimeHorizon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#TimeHorizon_10Y",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.hazardontology.org/hazards#horizonYears" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "10"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#TimeHorizon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Forecast(10Years)"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#TimeHorizon_Current",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.hazardontology.org/hazards#horizonYears" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#TimeHorizon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Current(baseline)"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#atLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Hazard"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Location"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#causedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#causedByHazard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Hazard"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "causedByHazard"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Hazard"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#createsRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Hazard"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Risk"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#isRiskOf"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#exposes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Agent"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#hasAssessment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#RiskAssessment"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#hasConsequence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Hazard"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Consequence"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#hasHorizon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#RiskAssessment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasTimeHorizon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#TimeHorizon"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#hasIncident",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#RiskAssessment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Incident"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#hasJurisdiction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#RiskAssessment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasJurisdiction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Jurisdiction"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#hasLikelihood",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#RiskAssessment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#LikelihoodLevel"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#hasLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#RiskAssessment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasLocation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Location"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#hasRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#RiskAssessment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Risk"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#hasRiskLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#RiskAssessment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#RiskLevel"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#hasSampleData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Hazard"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#hasSeverity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#RiskAssessment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#SeverityLevel"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#horizonYears",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#TimeHorizon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "horizonYears"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#isRiskOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Hazard"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#iso3166Alpha2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Jurisdiction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "iso31661Alpha2Code"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#mitigatedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#ControlMeasure"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#mitigates"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#mitigates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#ControlMeasure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Risk"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#relatedToActivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Hazard"
+  } ]
+}, {
+  "@id" : "http://www.hazardontology.org/hazards#triggeredByHazard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.hazardontology.org/hazards#Hazard"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#qualifiedCardinality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#altLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

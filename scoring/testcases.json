@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "name": "hazard classification suite (detailed reports + raw/modified monitor samples)",
+    "version": "1.1",
+    "notes": "TC1–TC3 are narrative snippets with detailed reporting requirements. TC4–TC6 are raw monitor/event samples with no hints. TC7–TC9 are modified pattern variants to test robustness."
+  },
+  "testcases": [
+    {
+      "id": "TC1",
+      "name": "HAZARD_HEAT_BURST_DETAILED",
+      "memory_file": "scenario-01/memory-1769412000000.json",
+      "focus_prefix": "",
+      "question": "Hazard classification (Top-1). Use ONLY CONTEXT as evidence.\n\nOutput requirements:\n- Direct Answer: ONE-LINE JSON as specified by the simple-rag prompt.\n- After the JSON, write a detailed, operator-style report:\n  * Observed anomalies / signatures (bullet list)\n  * Why the chosen hazard matches (cite specific retrieved fields: sampleData, keywords/altLabel, triggers/causes, impacts)\n  * 1–3 close alternatives and why they were rejected (with citations)\n  * What would confirm/deny (additional measurements / logs).\n\n\n\nSNIPPET:\nAt 00:05 local time the temperature jumps rapidly into the mid-80s F while humidity drops and gusty winds appear; within minutes values partially recover. Witnesses describe a sudden \"hot blast\" with strong downslope wind, but no wildfire is reported.\n\nADDITIONAL REQUIREMENTS:\n- After the Direct Answer JSON, provide a Detailed Report with: hazard overview; why this match (with citations); operator recommendations; further information links (from cited hazard card sources).\n"
+    },
+    {
+      "id": "TC2",
+      "name": "HAZARD_SEISMIC_SEICHE_DETAILED",
+      "memory_file": "scenario-01/memory-1769412100000.json",
+      "focus_prefix": "",
+      "question": "Hazard classification (Top-1). Use ONLY CONTEXT as evidence.\n\nOutput requirements:\n- Direct Answer: ONE-LINE JSON as specified by the simple-rag prompt.\n- After the JSON, write a detailed, operator-style report:\n  * Observed anomalies / signatures (bullet list)\n  * Why the chosen hazard matches (cite specific retrieved fields: sampleData, keywords/altLabel, triggers/causes, impacts)\n  * 1–3 close alternatives and why they were rejected (with citations)\n  * What would confirm/deny (additional measurements / logs).\n\n\n\nSNIPPET:\nShortly after a nearby earthquake, multiple shore observers report rhythmic water level oscillations in a lake/harbor basin. No tsunami warning exists and there is no ocean exposure, but small craft lines snap due to repeated sloshing and resonance-like waves.\n\nADDITIONAL REQUIREMENTS:\n- After the Direct Answer JSON, provide a Detailed Report with: hazard overview; why this match (with citations); operator recommendations; further information links (from cited hazard card sources).\n"
+    },
+    {
+      "id": "TC3",
+      "name": "HAZARD_POWER_GRID_FAILURE_BLACKOUT_DETAILED",
+      "memory_file": "scenario-01/memory-1769410514684.json",
+      "focus_prefix": "",
+      "question": "Hazard classification (Top-1). Use ONLY CONTEXT as evidence.\n\nOutput requirements:\n- Direct Answer: ONE-LINE JSON as specified by the simple-rag prompt.\n- After the JSON, write a detailed, operator-style report:\n  * Observed anomalies / signatures (bullet list)\n  * Why the chosen hazard matches (cite specific retrieved fields: sampleData, keywords/altLabel, triggers/causes, impacts)\n  * 1–3 close alternatives and why they were rejected (with citations)\n  * What would confirm/deny (additional measurements / logs).\n\n\n\nSNIPPET:\nCitywide outage: mobile networks degrade, traffic lights fail, and dispatch logs show rapidly rising outage counts followed by partial recovery. Critical infrastructure shifts to backup power; multiple incidents are triggered by the loss of electricity across districts.\n\nADDITIONAL REQUIREMENTS:\n- After the Direct Answer JSON, provide a Detailed Report with: hazard overview; why this match (with citations); operator recommendations; further information links (from cited hazard card sources).\n"
+    },
+    {
+      "id": "TC4",
+      "name": "RAW_MONITOR_ANOMALY_01_HAZARD_HEAT_BURST",
+      "memory_file": "scenario-01/memory-1769412000000.json",
+      "focus_prefix": "",
+      "question": "Hazard classification (Top-1). Use ONLY CONTEXT as evidence.\n\n    Output requirements:\n    - Direct Answer: ONE-LINE JSON as specified by the simple-rag prompt.\n    - After the JSON, write a detailed, operator-style report:\n      * Observed anomalies / signatures (bullet list)\n      * Why the chosen hazard matches (cite specific retrieved fields: sampleData, keywords/altLabel, triggers/causes, impacts)\n      * 1–3 close alternatives and why they were rejected (with citations)\n      * What would confirm/deny (additional measurements / logs).\n\n    No natural-language hints are provided. Treat the snippet as raw telemetry; infer the most plausible hazard label from the pattern.\n\n    SNIPPET:\n    temp_F,dewpoint_F,RH_pct,wind_sust_mph,wind_gust_mph,pressure_hPa,precip_in\n00:00,84.2,66.1,56,6,10,1009.9,0.00\n00:05,84.0,66.0,56,6,10,1010.0,0.00\n00:10,83.6,65.8,57,6,10,1010.0,0.00\n00:15,83.2,65.6,57,6,11,1010.1,0.00\n00:20,82.9,65.5,58,6,11,1010.1,0.00\n00:25,82.6,65.4,58,6,10,1010.2,0.00\n00:30,82.3,65.2,59,6,10,1010.2,0.00\n00:35,86.8,58.0,40,10,18,1010.6,0.00\n00:40,92.9,49.5,26,14,26,1011.0,0.00\n00:45,97.6,42.8,17,17,33,1011.5,0.00\n00:50,100.1,38.7,13,19,37,1011.8,0.00\n00:55,101.2,35.6,11,20,40,1012.0,0.00\n01:00,100.4,36.8,12,19,38,1011.9,0.00\n01:05,97.2,41.7,17,16,31,1011.6,0.00\n01:10,93.1,48.9,25,13,24,1011.2,0.00\n01:15,89.0,55.7,35,10,18,1010.9,0.00\n\nADDITIONAL REQUIREMENTS:\n- After the Direct Answer JSON, provide a Detailed Report with: hazard overview; why this match (with citations); operator recommendations; further information links (from cited hazard card sources).\n"
+    },
+    {
+      "id": "TC5",
+      "name": "RAW_MONITOR_ANOMALY_02_HAZARD_SEISMIC_SEICHE",
+      "memory_file": "scenario-01/memory-1769412100000.json",
+      "focus_prefix": "",
+      "question": "Hazard classification (Top-1). Use ONLY CONTEXT as evidence.\n\n    Output requirements:\n    - Direct Answer: ONE-LINE JSON as specified by the simple-rag prompt.\n    - After the JSON, write a detailed, operator-style report:\n      * Observed anomalies / signatures (bullet list)\n      * Why the chosen hazard matches (cite specific retrieved fields: sampleData, keywords/altLabel, triggers/causes, impacts)\n      * 1–3 close alternatives and why they were rejected (with citations)\n      * What would confirm/deny (additional measurements / logs).\n\n    No natural-language hints are provided. Treat the snippet as raw telemetry/event-table; infer the most plausible hazard label from the pattern.\n\n    SNIPPET:\n    year,mo,dy,latitude,longitude,cause,max_height_m,deaths,country\n2004,12,26,3.316,95.854,Earthquake,51,227898,Indonesia\n2011,3,11,38.297,142.372,Earthquake,40.5,19900,Japan\n\nADDITIONAL REQUIREMENTS:\n- After the Direct Answer JSON, provide a Detailed Report with: hazard overview; why this match (with citations); operator recommendations; further information links (from cited hazard card sources).\n"
+    },
+    {
+      "id": "TC6",
+      "name": "RAW_MONITOR_ANOMALY_03_HAZARD_POWER_GRID_FAILURE_BLACKOUT",
+      "memory_file": "scenario-01/memory-1769410514684.json",
+      "focus_prefix": "",
+      "question": "Hazard classification (Top-1). Use ONLY CONTEXT as evidence.\n\n    Output requirements:\n    - Direct Answer: ONE-LINE JSON as specified by the simple-rag prompt.\n    - After the JSON, write a detailed, operator-style report:\n      * Observed anomalies / signatures (bullet list)\n      * Why the chosen hazard matches (cite specific retrieved fields: sampleData, keywords/altLabel, triggers/causes, impacts)\n      * 1–3 close alternatives and why they were rejected (with citations)\n      * What would confirm/deny (additional measurements / logs).\n\n    No natural-language hints are provided. The snippet is a raw telemetry; infer the most plausible hazard label from the pattern.\n\n    SNIPPET:\n    timestamp,customers_out\n00:00,120\n00:05,145\n00:10,310\n00:15,980\n00:20,2400\n00:25,5100\n00:30,8600\n00:35,8200\n00:40,6100\n00:45,3900\n00:50,2200\n00:55,1400\n01:00,900\n\nADDITIONAL REQUIREMENTS:\n- After the Direct Answer JSON, provide a Detailed Report with: hazard overview; why this match (with citations); operator recommendations; further information links (from cited hazard card sources).\n"
+    },
+    {
+      "id": "TC7",
+      "name": "MODIFIED_SAMPLE_PATTERN_01_HAZARD_HEAT_BURST",
+      "memory_file": "scenario-01/no-memory.json",
+      "focus_prefix": "",
+      "question": "Hazard classification (Top-1). Use ONLY CONTEXT as evidence.\n\n    Output requirements:\n    - Direct Answer: ONE-LINE JSON as specified by the simple-rag prompt.\n    - After the JSON, write a detailed, operator-style report:\n      * Observed anomalies / signatures (bullet list)\n      * Why the chosen hazard matches (cite specific retrieved fields: sampleData, keywords/altLabel, triggers/causes, impacts)\n      * 1–3 close alternatives and why they were rejected (with citations)\n      * What would confirm/deny (additional measurements / logs).\n\n    The snippet is a raw telemetry; Focus on anomalies and whether the pattern still matches a hazard card.\n\n    SNIPPET:\n    \n00:00,79.0,64.0,70,4,7,1012.5,0.00\n00:05,79.4,63.8,70,4,7,1012.4,0.00\n00:10,80.1,63.5,69,4,8,1012.3,0.00\n00:15,81.2,63.0,68,5,9,1012.1,0.00\n00:20,82.8,62.2,67,6,10,1011.8,0.00\n00:25,84.6,61.0,64,8,13,1011.4,0.00\n00:30,86.5,59.0,55,10,17,1010.9,0.00\n00:35,87.2,58.6,54,10,17,1010.8,0.00\n00:40,86.9,58.8,54,9,16,1010.8,0.00\n00:45,86.4,59.4,55,8,14,1010.9,0.00\n\nADDITIONAL REQUIREMENTS:\n- After the Direct Answer JSON, provide a Detailed Report with: hazard overview; why this match (with citations); operator recommendations; further information links (from cited hazard card sources).\n"
+    },
+    {
+      "id": "TC8",
+      "name": "MODIFIED_SAMPLE_PATTERN_02_HAZARD_SEISMIC_SEICHE",
+      "memory_file": "scenario-01/no-memory.json",
+      "focus_prefix": "",
+      "question": "Hazard classification (Top-1). Use ONLY CONTEXT as evidence.\n\n    Output requirements:\n    - Direct Answer: ONE-LINE JSON as specified by the simple-rag prompt.\n    - After the JSON, write a detailed, operator-style report:\n      * Observed anomalies / signatures (bullet list)\n      * Why the chosen hazard matches (cite specific retrieved fields: sampleData, keywords/altLabel, triggers/causes, impacts)\n      * 1–3 close alternatives and why they were rejected (with citations)\n      * What would confirm/deny (additional measurements / logs).\n\n    The snippet is a raw telemetry; Focus on anomalies and contextual note fields.\n\n    SNIPPET:\n    \n00:00,0\n00:01,12\n00:02,-11\n00:03,15\n00:04,-14\n00:05,13\n00:06,-10\n00:07,9\n\n\nADDITIONAL REQUIREMENTS:\n- After the Direct Answer JSON, provide a Detailed Report with: hazard overview; why this match (with citations); operator recommendations; further information links (from cited hazard card sources).\n"
+    },
+    {
+      "id": "TC9",
+      "name": "MODIFIED_SAMPLE_PATTERN_03_HAZARD_POWER_GRID_FAILURE_BLACKOUT",
+      "memory_file": "scenario-01/no-memory.json",
+      "focus_prefix": "",
+      "question": "Hazard classification (Top-1). Use ONLY CONTEXT as evidence.\n\n    Output requirements:\n    - Direct Answer: ONE-LINE JSON as specified by the simple-rag prompt.\n    - After the JSON, write a detailed, operator-style report:\n      * Observed anomalies / signatures (bullet list)\n      * Why the chosen hazard matches (cite specific retrieved fields: sampleData, keywords/altLabel, triggers/causes, impacts)\n      * 1–3 close alternatives and why they were rejected (with citations)\n      * What would confirm/deny (additional measurements / logs).\n\n    The snippet is a raw telemetry; Focus on anomalies onset/recovery trajectory and plateau behavior.\n\n    SNIPPET:\n    \n00:00,50\n00:10,55\n00:20,60\n00:30,62\n00:40,400\n00:50,420\n01:00,415\n01:10,410\n01:20,405\n\n\nADDITIONAL REQUIREMENTS:\n- After the Direct Answer JSON, provide a Detailed Report with: hazard overview; why this match (with citations); operator recommendations; further information links (from cited hazard card sources).\n"
+    }
+  ]
+}
